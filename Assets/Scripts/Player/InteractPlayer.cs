@@ -2,15 +2,34 @@ using UnityEngine;
 
 public class InteractPlayer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private IInteractable interactableInRange;
+    private Collider2D col;
+
+    private void Awake()
     {
-        
+        col = GetComponent<Collider2D>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Interact()
     {
-        
+        interactableInRange?.Interact();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IInteractable interactable))
+        {
+            interactableInRange = interactable;
+            interactableInRange.OnFocus();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.TryGetComponent(out IInteractable interactable) && interactable == interactableInRange)
+        {
+            interactableInRange.OffFocus();
+            interactableInRange = null;
+        }
     }
 }

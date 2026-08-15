@@ -20,6 +20,9 @@ public class InputPlayer : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext ctx)
     {
-
+        if (ctx.performed)
+        {
+            interactPlayer.Interact();
+        }
     }
 }
