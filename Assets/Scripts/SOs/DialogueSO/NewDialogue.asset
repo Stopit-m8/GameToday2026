@@ -16,14 +16,42 @@ MonoBehaviour:
     dialogueLines:
     - name: joko
       leftSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-      rightSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-      sentence: lokhjh
-      onLeft: 0
+      rightSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+      sentence: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+        sed erat egestas, pulvinar libero in, egestas lorem. Cras efficitur nulla
+        a velit aliquam vehicula. Donec dui tellus, porttitor vitae gravida in, ultrices
+        id nisl. Nam scelerisque, lorem id malesuada vehicula, risus ex dignissim
+        elit, at dapibus nulla est eu libero. Curabitur in venenatis nulla. Aliquam
+        porttitor lorem odio. Duis blandit aliquam nibh vel feugiat. Maecenas ut
+        enim sed mauris hendrerit tincidunt. Morbi feugiat, libero eu sagittis gravida,
+        erat neque convallis nunc, in ullamcorper elit metus id justo. Phasellus
+        eget consequat nulla. Praesent lacinia maximus metus in finibus. Nullam venenatis
+        ut nibh sit amet efficitur. Integer dapibus massa et nunc varius rutrum.
+        Pellentesque mattis vestibulum lacus eget porttitor. Praesent eget porta
+        ex.
+
+        
+
+        Nullam ipsum mauris, malesuada at viverra et, feugiat
+        rutrum ex. Ut semper nisl ac mi efficitur rhoncus ac ac dui. Donec laoreet
+        odio id dignissim ullamcorper. Sed pulvinar, nunc eu molestie malesuada,
+        nunc libero luctus tellus, vulputate faucibus urna nibh a odio. Aliquam pretium
+        neque in tincidunt volutpat. Morbi lorem quam, mollis quis dui nec, suscipit
+        feugiat neque. Ut sed tortor ac urna cursus suscipit et consectetur lacus.
+        Suspendisse potenti. Pellentesque imperdiet ipsum ut ante pulvinar, faucibus
+        eleifend orci gravida. In turpis ante, aliquet eu eros in, pharetra tempor
+        dui. Nam molestie aliquet nisi, a aliquet magna posuere sed. Suspendisse
+        erat arcu, mattis vitae placerat eget, euismod vitae felis. Suspendisse aliquam
+        massa nec libero posuere hendrerit. Donec sodales, nunc placerat luctus cursus,
+        odio nibh tristique diam, ut scelerisque nisl nulla vitae justo. Nam id interdum
+        velit, quis ornare orci. Aliquam interdum lectus non lectus posuere, elementum
+        auctor turpis rhoncus.'
+      onLeft: 1
     - name: joko
-      leftSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+      leftSprite: {fileID: 0}
       rightSprite: {fileID: 0}
       sentence: kontol
-      onLeft: 0
+      onLeft: 1
     - name: as
       leftSprite: {fileID: 0}
       rightSprite: {fileID: 0}

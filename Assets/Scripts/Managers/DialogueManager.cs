@@ -9,12 +9,18 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
     private Queue<DialogueLines> sentences;
-    [SerializeField] private TMP_Text textArea;
-    [SerializeField] private Image leftSprite;
-    [SerializeField] private Image rightSprite;
     private Sprite prevLeftSprite;
     private Sprite prevRightSprite;
-    [SerializeField] private float typeSpeed;
+
+    [SerializeField] private TMP_Text nameText;
+    [SerializeField] private TMP_Text textArea;
+    [SerializeField] private Image leftImage;
+    [SerializeField] private Image rightImage;
+
+    public bool isTyping { get; private set; }
+    private float typeSpeed;
+    [SerializeField] private float normalTypeSpeed;
+    [SerializeField] private float fastTypeSpeed;
     [SerializeField] private PlayerInput playerInput;
 
     private void Awake()
@@ -34,6 +40,17 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         sentences = new Queue<DialogueLines>();
+        typeSpeed = normalTypeSpeed;
+    }
+
+    public void SpeedType()
+    {
+        typeSpeed = fastTypeSpeed;
+    }
+
+    public void SlowType()
+    {
+        typeSpeed = normalTypeSpeed;
     }
 
     public void StartDialogue(Dialogue dialogue)
@@ -61,6 +78,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DialogueLines sentence = sentences.Dequeue();
+        nameText.text = sentence.name;
         DisplayImage(sentence);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
@@ -69,6 +87,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(DialogueLines dialogueLine)
     {
+        isTyping = true;
         textArea.text = dialogueLine.sentence;
         textArea.maxVisibleCharacters = 0;
         for (int i = 0; i <= dialogueLine.sentence.Length; i++)
@@ -76,40 +95,47 @@ public class DialogueManager : MonoBehaviour
             textArea.maxVisibleCharacters = i;
             yield return new WaitForSeconds(typeSpeed);
         }
+        isTyping = false;
+        SlowType();
     }
 
     private void DisplayImage(DialogueLines dialogueLine)
     {
-        Sprite leftImage = dialogueLine.leftSprite;
-        Sprite rightImage = dialogueLine.rightSprite;
-        if (leftImage == null)
+        Sprite leftSprite = dialogueLine.leftSprite;
+        Sprite rightSprite = dialogueLine.rightSprite;
+        Image activeImage = dialogueLine.onLeft ? leftImage : rightImage;
+        Image inactiveImage = dialogueLine.onLeft ? rightImage : leftImage;
+
+        if (leftSprite == null)
         {
-            leftImage = prevLeftSprite;
+            leftSprite = prevLeftSprite;
         }
         else
         {
-            prevLeftSprite = leftImage;
+            prevLeftSprite = leftSprite;
         }
 
-        if (rightImage == null)
+        if (rightSprite == null)
         {
-            rightImage = prevRightSprite;
+            rightSprite = prevRightSprite;
         }
         else
         {
-            prevRightSprite = rightImage;
+            prevRightSprite = rightSprite;
         }
-        leftSprite.sprite = leftImage;
-        rightSprite.sprite = rightImage;
 
-        if (dialogueLine.onLeft)
-        {
-            //update opacity
-        }
-        else
-        {
-            //update opacity
-        }
+        leftImage.sprite = leftSprite;
+        rightImage.sprite = rightSprite;
+
+        ChangeOpacity(activeImage, 1f);
+        ChangeOpacity(inactiveImage, 0.5f);
+    }
+
+    private void ChangeOpacity(Image image, float opacity)
+    {
+        Color color = image.color;
+        color.a = opacity;
+        image.color = color;
     }
 
     private void EndDialogue()

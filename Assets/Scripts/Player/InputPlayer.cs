@@ -40,6 +40,13 @@ public class InputPlayer : MonoBehaviour
     {
         if (ctx.performed)
         {
+            if (DialogueManager.instance.isTyping)
+            {
+                Debug.Log("I'm speed");
+                DialogueManager.instance.SpeedType();
+                return;
+            }
+            Debug.Log("play dialogue");
             DialogueManager.instance.DisplayNextSentence();
         }
     }

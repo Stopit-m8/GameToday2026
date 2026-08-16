@@ -721,10 +721,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6674f7b3df47443985d58288c12c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  nameText: {fileID: 1125383764}
   textArea: {fileID: 1495505382}
-  leftSprite: {fileID: 1890881389}
-  rightSprite: {fileID: 1660972882}
-  typeSpeed: 0.05
+  leftImage: {fileID: 1890881389}
+  rightImage: {fileID: 1660972882}
+  normalTypeSpeed: 0.05
+  fastTypeSpeed: 0.001
   playerInput: {fileID: 199906572}
 --- !u!1 &463196934
 GameObject:
