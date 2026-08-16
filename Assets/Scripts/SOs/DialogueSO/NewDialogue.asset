@@ -12,7 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
   m_Name: NewDialogue
   m_EditorClassIdentifier: 
-  charName: 
-  charImage: {fileID: 0}
-  dialogueLines: []
-  typeSpeed: 0.05
+  dialogue:
+    dialogueLines:
+    - name: joko
+      leftSprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+      rightSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+      sentence: lokhjh
+      onLeft: 0
+    - name: joko
+      leftSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
+      rightSprite: {fileID: 0}
+      sentence: kontol
+      onLeft: 0
+    - name: as
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ja penis
+      onLeft: 0

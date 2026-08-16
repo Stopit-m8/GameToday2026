@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public Dialogue dialogue;
+    public DialogueSO dialogue;
 
     public void TriggerDialogue()
     {
-        DialogueManager.instance.StartDialogue(dialogue);
+        DialogueManager.instance.StartDialogue(dialogue.dialogue);
     }
 }
