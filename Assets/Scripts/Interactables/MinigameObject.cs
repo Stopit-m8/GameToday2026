@@ -1,14 +1,14 @@
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 public class MinigameObject : MonoBehaviour, IInteractable
 {
     [SerializeField] private GameObject notificationPlace;
-    [SerializeField] private GameObject minigamePanel;
 
     public void Interact()
     {
         Debug.Log("Object interacted");
-        minigamePanel.SetActive(true);
+        MinigameManager.instance.OpenMinigame();
     }
 
     public void OffFocus()

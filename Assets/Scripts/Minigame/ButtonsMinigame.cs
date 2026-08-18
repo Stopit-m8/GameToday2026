@@ -6,6 +6,6 @@ public class ButtonsMinigame : MonoBehaviour
 
     public void CloseMinigame()
     {
-        MinigamePanel.SetActive(false);
+        MinigameManager.instance.FinishMinigame();
     }
 }
