@@ -30,7 +30,7 @@ public class InputPlayer : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.started)
         {
             interactPlayer.Interact();
         }
@@ -38,7 +38,7 @@ public class InputPlayer : MonoBehaviour
 
     public void ContinueDialogue(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.started)
         {
             if (DialogueManager.instance.isTyping)
             {

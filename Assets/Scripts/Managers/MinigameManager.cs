@@ -3,7 +3,9 @@ using UnityEngine;
 public class MinigameManager : MonoBehaviour
 {
     public static MinigameManager instance;
-    [SerializeField] private CanvasGroup minigamePanel;
+    private IMinigame minigame;
+    private CanvasGroup minigamePanel;
+    [SerializeField] private GameObject minigameObject;
 
     private void Awake()
     {
@@ -17,9 +19,16 @@ public class MinigameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        minigamePanel = minigameObject.GetComponent<CanvasGroup>();
+        minigame = minigameObject.GetComponent<IMinigame>();
+    }
+
     public void OpenMinigame()
     {
         OpenPanel(minigamePanel);
+        minigame.StartMinigame();
     }
 
     public void FinishMinigame()
