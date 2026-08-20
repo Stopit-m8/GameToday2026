@@ -1,18 +1,23 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Minigame1 : MonoBehaviour, IMinigame
 {
+    [SerializeField] private TMP_Text successText;
     [SerializeField] private GameObject dalgonaPrefab;
     [SerializeField] private Transform dalgonaSpawnPoint;
+    [SerializeField] private int maxSuccess;
     private GameObject currDalgona;
+    private GameObject currMold;
     private int currSuccess = 0;
 
     public void StartMinigame()
     {
         SpawnDalgona();
         currSuccess = 0;
+        UpdateUI();
         currDalgona.GetComponent<Dalgona>().OnDalgonaChecked += DalgonaChecked;
     }
 
@@ -22,8 +27,10 @@ public class Minigame1 : MonoBehaviour, IMinigame
         {
             child.gameObject.SetActive(false);
         }
-        currDalgona = null;
         currDalgona.GetComponent<Dalgona>().OnDalgonaChecked -= DalgonaChecked;
+        currDalgona = null;
+        currMold = null;
+        
         MinigameManager.instance.FinishMinigame();
     }
 
@@ -42,6 +49,7 @@ public class Minigame1 : MonoBehaviour, IMinigame
             dalgona.GetComponent<Dalgona>().Initialize();
             currDalgona = dalgona;
         }
+        currMold = currDalgona.transform.GetChild(0).gameObject;
         
     }
 
@@ -56,13 +64,39 @@ public class Minigame1 : MonoBehaviour, IMinigame
         {
             Debug.Log("Manager received failure");
         }
+        UpdateUI();
+        if (CheckSuccess() == false)
+        {
+            SpawnDalgona();
+        }
+        else
+        {
+            StopMinigame();
 
-        SpawnDalgona();
+        }
+        
+    }
+
+    private bool CheckSuccess()
+    {
+        if (currSuccess >= maxSuccess)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    private void UpdateUI()
+    {
+        successText.text = $"Success {currSuccess}/{maxSuccess}";
     }
 
     public void CheckDalgonaWithMold(MoldSO mold)
     {
         currDalgona.GetComponent<Dalgona>().CheckDalgona(mold);
-        SpawnDalgona();
+        
     }
 }

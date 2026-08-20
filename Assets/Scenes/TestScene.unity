@@ -2984,8 +2984,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93d13805d44739a499e7b979945e65fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  successText: {fileID: 1340929551}
   dalgonaPrefab: {fileID: 1771516336985190874, guid: 185897ca760caf74683bf02f43b6614d, type: 3}
   dalgonaSpawnPoint: {fileID: 1908910261}
+  maxSuccess: 5
 --- !u!1 &1950013025
 GameObject:
   m_ObjectHideFlags: 0

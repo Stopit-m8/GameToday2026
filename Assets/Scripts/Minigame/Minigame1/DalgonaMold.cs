@@ -18,7 +18,6 @@ public class DalgonaMold : MonoBehaviour
     }
     public void DeployMold()
     {
-        Debug.Log($"Send {moldSO.moldType}");
         minigame.CheckDalgonaWithMold(moldSO);
     }
 }

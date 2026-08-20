@@ -17,10 +17,6 @@ public class InputPlayer : MonoBehaviour
             map.Disable();
         }
         playerInput.actions.FindActionMap("Player").Enable();
-        foreach (var map in playerInput.actions.actionMaps)
-        {
-            Debug.Log($"{map.name}: {map.enabled}");
-        }
     }
     public void Movement(InputAction.CallbackContext ctx)
     {
