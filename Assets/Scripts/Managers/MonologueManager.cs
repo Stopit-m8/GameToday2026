@@ -45,6 +45,7 @@ public class MonologueManager : MonoBehaviour
 
     public void StartMonologue(Monologue monologue)
     {
+        StopAllCoroutines();
         sentences.Clear();
         foreach (MonologueLine monologueLines in monologue.monologueLines)
         {
@@ -68,10 +69,8 @@ public class MonologueManager : MonoBehaviour
     {
         MonologueLine sentence = sentences.Dequeue();
         StartCoroutine(TypeSentence(sentence));
-        Debug.Log("The other penis");
         yield return new WaitForSeconds(showTime);
         DisplayNextSentence();
-        Debug.Log("penis");
     }
 
     IEnumerator TypeSentence(MonologueLine monologueLine)
