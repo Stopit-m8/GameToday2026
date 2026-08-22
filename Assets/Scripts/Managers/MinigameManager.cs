@@ -1,4 +1,6 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class MinigameManager : MonoBehaviour
 {
@@ -6,6 +8,7 @@ public class MinigameManager : MonoBehaviour
     private IMinigame minigame;
     private CanvasGroup minigamePanel;
     [SerializeField] private GameObject minigameObject;
+    [SerializeField] private PlayerInput playerInput;
 
     private void Awake()
     {
@@ -27,12 +30,20 @@ public class MinigameManager : MonoBehaviour
 
     public void OpenMinigame()
     {
+        StartCoroutine(OpenMinigameCoroutine());
+    }
+
+    IEnumerator OpenMinigameCoroutine()
+    {
         OpenPanel(minigamePanel);
         minigame.StartMinigame();
+        yield return null;
+        playerInput.actions.FindActionMap("Player").Disable();
     }
 
     public void FinishMinigame()
     {
+        playerInput.actions.FindActionMap("Player").Enable();
         ClosePanel(minigamePanel);
     }
 

@@ -26,8 +26,10 @@ public class InputPlayer : MonoBehaviour
 
     public void Interact(InputAction.CallbackContext ctx)
     {
+        Debug.Log("dih");
         if (ctx.started)
         {
+            Debug.Log("interacted press");
             interactPlayer.Interact();
         }
     }
