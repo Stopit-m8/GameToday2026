@@ -8,6 +8,7 @@ public class ButtonManager : MonoBehaviour
     public void PlayGame()
     {
         Debug.Log("Play game");
+        TransitionManager.instance.LoadScene(1);
     }
 
     public void ExitGame()

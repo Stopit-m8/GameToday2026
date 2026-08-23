@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class TransitionManager : MonoBehaviour
 {
     public static TransitionManager instance;
+    [SerializeField] private Animator animator;
 
     private void Awake()
     {
@@ -26,7 +27,10 @@ public class TransitionManager : MonoBehaviour
 
     IEnumerator StartLoadScene(int sceneIndex)
     {
+        animator.SetTrigger("FadeIn");
+        
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneIndex);
+        animator.SetTrigger("FadeOut");
     }
 }
