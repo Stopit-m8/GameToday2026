@@ -1,7 +1,9 @@
+using System;
 using UnityEngine;
 
 public class BugClimb : MonoBehaviour
 {
+    public event Action<bool> OnArriveStart;
     [SerializeField] private Transform startPoint;
     [SerializeField] private Transform endPoint;
 
@@ -16,5 +18,23 @@ public class BugClimb : MonoBehaviour
         progress += spinAmount * progressMultiplier;
         progress = Mathf.Clamp01(progress);
         transform.position = Vector3.Lerp(startPoint.position, endPoint.position, progress);
+        CheckProgress();
+    }
+
+    private void CheckProgress()
+    {
+        if (transform.position == endPoint.position)
+        {
+            OnArriveStart?.Invoke(true);
+        }
+        else
+        {
+            return;
+        }
+    }
+
+    public void ResetProgress()
+    {
+        progress = 0f;
     }
 }
