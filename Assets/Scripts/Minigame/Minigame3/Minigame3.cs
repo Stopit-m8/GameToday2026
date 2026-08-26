@@ -7,8 +7,10 @@ public class Minigame3 : MonoBehaviour, IMinigame
     [SerializeField] private float addedProgress;
     [SerializeField] private Horse horse;
     [SerializeField] private Whip whip;
+    private bool hasGlitch = false;
     public void StartMinigame()
     {
+        hasGlitch = false;
         horse.OnHorseSpanked += HorseSpanked;
         whip.SetActiveMinigame(true);
         Cursor.visible = false;
@@ -20,14 +22,35 @@ public class Minigame3 : MonoBehaviour, IMinigame
         AddProgress();
     }
 
+    private void DoGlitch()
+    {
+        progressSlider.value = 75f;
+        
+        horse.ChangeSprite();
+
+        hasGlitch = true;
+    }
+
     private void AddProgress()
     {
         if (progressSlider.value >= progressSlider.maxValue)
         {
-            StopMinigame();
-            return;
+            if (!hasGlitch)
+            {
+                DoGlitch();
+            }
+            else
+            {
+                StopMinigame();
+                return;
+            }
+                
         }
-        progressSlider.value += addedProgress;
+        else
+        {
+            progressSlider.value += addedProgress;
+        }
+            
     }
 
     public void StopMinigame()
@@ -37,5 +60,6 @@ public class Minigame3 : MonoBehaviour, IMinigame
         Cursor.visible = true;
         horse.OnHorseSpanked -= HorseSpanked;
         MinigameManager.instance.FinishMinigame();
+        hasGlitch = true;
     }
 }
