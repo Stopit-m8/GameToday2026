@@ -1,16 +1,49 @@
+using DG.Tweening;
+using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class Circle : MonoBehaviour
+public class Circle : MonoBehaviour, IPointerClickHandler
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public event Action<Circle> OnCircleClicked;
+    private Image circle;
+    [SerializeField] private float showTime;
+    [SerializeField] private float stayTime;
+    [SerializeField] private float hideTime;
+
+    private void Awake()
     {
-        
+        circle = GetComponent<Image>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnPointerClick(PointerEventData eventData)
     {
-        
+        OnCircleClicked?.Invoke(this);
+        StopAllCoroutines();
+        gameObject.SetActive(false);
+
     }
+
+    private void OnEnable()
+    {
+        ShowCircle();
+    }
+
+    private void ShowCircle()
+    {
+        StartCoroutine(ShowCircleCoroutine());
+
+    }
+
+    IEnumerator ShowCircleCoroutine()
+    {
+        circle.DOFade(1f, showTime);
+        yield return new WaitForSeconds(showTime + stayTime);
+        circle.DOFade(0f, hideTime);
+        yield return new WaitForSeconds(hideTime);
+        gameObject.SetActive(false);
+    }
+
 }
