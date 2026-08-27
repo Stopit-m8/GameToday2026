@@ -22,13 +22,16 @@ public class Circle : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         OnCircleClicked?.Invoke(this);
-        StopAllCoroutines();
+        StopCoroutine(ShowCircleCoroutine());
         gameObject.SetActive(false);
 
     }
 
     private void OnEnable()
     {
+        Color color = circle.color;
+        color.a = 0f;
+        circle.color = color;
         ShowCircle();
     }
 

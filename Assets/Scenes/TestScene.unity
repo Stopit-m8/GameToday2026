@@ -421,6 +421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b1de791c8c896a4da5c95688d5eda20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clickMeText: {fileID: 996866325}
+  clickMeTimeShow: 10
 --- !u!1 &107631359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2153,8 +2155,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
