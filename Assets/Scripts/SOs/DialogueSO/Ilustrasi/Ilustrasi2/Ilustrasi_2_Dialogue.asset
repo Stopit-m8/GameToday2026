@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
+  m_Name: Ilustrasi_2_Dialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Ahh, my first arrive in junior high school
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: This time I forced myself to become the friendliest person in the
+        room.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Always smiling, always helpful. But more importantly, I swore never
+        to ask for help again. I buried my pain deep down so no one could ever see
+        my flaws.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: And the sick joke? It worked.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: In just a week, I was surrounded by people. I even made a best friend.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: But deep down, I knew it was all built on a fragile glass mask.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I didn't even dare to trust her fully... because I believed the second
+        I broke, everyone would leave again.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I stopped helping people out of genuine kindness. It became a transaction.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: "I needed to be perfect. No matter what it took\u2014my heart, my
+        empathy, my true self... I threw it all away."
+      onLeft: 0

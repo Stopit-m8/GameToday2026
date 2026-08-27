@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
+  m_Name: Gameplay2Dialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: What... happened to me?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Where am I? Is this my final end?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: "Maybe I already know why I\u2019m here."
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I'm just a hollow shell... someone who hid behind a mask for so long,
+        I forgot who I was.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: What was the point of pushing myself every single day?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: It all feels so meaningless. I can't even express how I truly feel
+        anymore.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Echo
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Find them...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Wh-who's there? Who said that?!
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Its the same voice
+      onLeft: 0
+    - name: Echo
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Find them... before it all disappears.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Wait! 'Find them'? What is that supposed to mean...?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I guess lying here won't change anything. Maybe I should explore
+        this place...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Maybe I can find them in every corner.
+      onLeft: 0

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
+  m_Name: EndingDialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: NARA!! WAKE UP!!
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: NARA??
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Thank God... you're back! DON'T EVER ZONE OUT LIKE THAT AGAIN! You
+        scared me to death!
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I'm sorry... I'm sorry I panicked you.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: And... I'm sorry I'm not perfect.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Earlier... you said you wanted to be my friend because I can do everything...
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: What are you even talking about?! I was just teasing you! I don't
+        care about your grades or your college! I'm your friend no matter what!
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: No... I lied to you.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I wasn't being kind out of pure love. I was kind because I was terrified
+        of being alone.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I forced myself to help everyone just so I wouldn't lose them. I
+        hid all my struggles because I thought you'd leave if I wasn't perfect.
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: But... is that really how you want to live forever?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Of course not, I want to help people because I truly care, not because
+        I'm forced to.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I want my real self back. I don't want to be under my mask anymore.
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: See? THAT'S the Nara I chose to be friends with!
+      onLeft: 0

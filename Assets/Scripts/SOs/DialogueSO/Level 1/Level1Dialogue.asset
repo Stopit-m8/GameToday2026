@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
+  m_Name: Level1Dialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Where... am I?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Am I dead...?
+      onLeft: 0
+    - name: Rina
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: (Muffled Voice) "Nara... Nara...!
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Is that... Rin's voice?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Ah... I guess I really did it. I really died...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I remember standing at the edge... I remember wanting to jump.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: So... what is this place? Why does it feel so cold and creepy?
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Maybe I should just stay here.
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: "At least in this darkness, I\u2019m finally alone. No more expectations...
+        no more trying to be perfect... no more judgment."
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: "Just me... all alone. Like I\u2019ve always been."
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Echo
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Go..
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ?!
+      onLeft: 0
+    - name: Echo
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Go forward...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Wh-who's there?!
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: ...
+      onLeft: 0
+    - name: Nara
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Go forward...? Maybe... I should just move.
+      onLeft: 0

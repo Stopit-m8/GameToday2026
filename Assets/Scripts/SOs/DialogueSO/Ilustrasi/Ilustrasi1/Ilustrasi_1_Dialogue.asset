@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53ee3976b5135c4e9247ce665451ab3, type: 3}
+  m_Name: Ilustrasi_1_Dialogue
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Wait... what is this? Is this a memory?
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Oh yeah, this is my memory when I was a kid
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: God, how naive was I?
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: Every time they asked for help, I gladly gave them everything.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: My parents taught me to be kind, so I thought that was enough.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: But the moment I was the one reaching out for help... they vanished.
+        One by one, into the dark.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: I was left standing all alone. I couldn't even bring myself to tell
+        my parents.
+      onLeft: 0
+    - name: Rana
+      leftSprite: {fileID: 0}
+      rightSprite: {fileID: 0}
+      sentence: 'That was the day I learned a cruel lesson: people only want you
+        around if you''re useful. If you''re perfect..'
+      onLeft: 0
