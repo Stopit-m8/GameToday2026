@@ -5,8 +5,12 @@ public class Minigame4 : MonoBehaviour, IMinigame
 {
     [SerializeField] private RectTransform spawnArea;
     [SerializeField] private int spawnTime;
+    [SerializeField] private Mask mask;
+    [SerializeField] private int circlesLimit;
+    [SerializeField] private int maskLimit;
     private CirclePooling pool;
     private int circleClicked = 0;
+    private int maskClicked = 0;
     private bool minigameIsActive = false;
 
     private void Awake()
@@ -22,6 +26,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
     public void StartMinigame()
     {
         minigameIsActive = true;
+        mask.OnMaskClick += MaskClicked;
         StartCoroutine(SpawnCircleCoroutine());
     }
 
@@ -43,12 +48,18 @@ public class Minigame4 : MonoBehaviour, IMinigame
         if (obj != null)
         {
             obj.GetComponent<Circle>().OnCircleClicked += CircleClicked;
+            obj.GetComponent<Circle>().OnCircleDisabled += UnsubFromCircle;
             float x = Random.Range(spawnArea.rect.xMin, spawnArea.rect.xMax);
             float y = Random.Range(spawnArea.rect.yMin, spawnArea.rect.yMax);
             obj.GetComponent<RectTransform>().anchoredPosition = new Vector2(x, y);
             obj.SetActive(true);
         }
-        ;
+    }
+
+    private void UnsubFromCircle(Circle circle)
+    {
+        circle.OnCircleClicked -= CircleClicked;
+        circle.OnCircleDisabled -= UnsubFromCircle;
     }
 
     IEnumerator SpawnCircleCoroutine()
@@ -64,17 +75,35 @@ public class Minigame4 : MonoBehaviour, IMinigame
 
     private void CircleClicked(Circle circle)
     {
-        circle.OnCircleClicked -= CircleClicked;
-        Debug.Log("Clicked: " + circle.gameObject.name);
-        if (circleClicked >= 10)
-        {
-            StopAllCoroutines();
-            //this will be replaced
-            StopMinigame();
-            return;
-            //this will be replaced
-        }
         circleClicked++;
         Debug.Log($"circle clicked = {circleClicked}");
+        circle.OnCircleClicked -= CircleClicked;
+        Debug.Log("Clicked: " + circle.gameObject.name);
+        if (circleClicked >= circlesLimit)
+        {
+            StopAllCoroutines();
+            StartMaskClick();
+            return;
+        }
+        
+    }
+
+    private void MaskClicked()
+    {
+        maskClicked++;
+        Debug.Log($"mask clicked = {maskClicked}");
+        if (maskClicked >= maskLimit)
+        {
+            StopAllCoroutines();
+            StopMinigame();
+            return;
+        }
+        
+        
+    }
+
+    private void StartMaskClick()
+    {
+        mask.ActivateMask();
     }
 }

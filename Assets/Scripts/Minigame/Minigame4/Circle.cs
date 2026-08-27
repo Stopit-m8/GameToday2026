@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Circle : MonoBehaviour, IPointerClickHandler
 {
     public event Action<Circle> OnCircleClicked;
+    public event Action<Circle> OnCircleDisabled;
     private Image circle;
     [SerializeField] private float showTime;
     [SerializeField] private float stayTime;
@@ -30,6 +31,12 @@ public class Circle : MonoBehaviour, IPointerClickHandler
     {
         ShowCircle();
     }
+
+    private void OnDisable()
+    {
+        OnCircleDisabled?.Invoke(this);
+    }
+
 
     private void ShowCircle()
     {
