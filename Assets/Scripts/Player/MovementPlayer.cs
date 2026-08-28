@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MovementPlayer : MonoBehaviour
+public class MovementPlayer : MonoBehaviour, IMovement
 {
     [SerializeField] private float speed;
     private Rigidbody2D rb;
@@ -11,6 +11,7 @@ public class MovementPlayer : MonoBehaviour
 
     public void Move(Vector2 Dir)
     {
-        rb.linearVelocity = new Vector2(speed * Dir.normalized.x, rb.linearVelocityY);
+        rb.linearVelocity = new Vector2(Dir.x * speed, rb.linearVelocityY);
+        Debug.Log(rb.linearVelocityX);
     }
 }

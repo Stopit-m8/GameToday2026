@@ -4,13 +4,13 @@ using UnityEngine.InputSystem;
 public class InputPlayer : MonoBehaviour
 {
     public Vector2 Direction { get; private set; }
-    private MovementPlayer movementPlayer;
+    private IMovement movementPlayer;
     private InteractPlayer interactPlayer;
     [SerializeField] private PlayerInput playerInput;
 
     private void Awake()
     {
-        movementPlayer = GetComponent<MovementPlayer>();
+        movementPlayer = GetComponent<IMovement>();
         interactPlayer = GetComponent<InteractPlayer>();
         foreach (var map in playerInput.actions.actionMaps)
         {
@@ -21,6 +21,7 @@ public class InputPlayer : MonoBehaviour
     public void Movement(InputAction.CallbackContext ctx)
     {
         Direction = ctx.ReadValue<Vector2>();
+        Debug.Log(Direction);
         movementPlayer.Move(Direction);
     }
 
