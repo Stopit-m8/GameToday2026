@@ -22,7 +22,7 @@ MonoBehaviour:
     - name: Nara
       leftSprite: {fileID: 0}
       rightSprite: {fileID: 0}
-      sentence: But I already too late
+      sentence: But I'm already too late
       onLeft: 0
     - name: Nara
       leftSprite: {fileID: 0}
