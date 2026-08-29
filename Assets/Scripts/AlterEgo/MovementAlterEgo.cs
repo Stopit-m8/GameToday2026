@@ -10,10 +10,12 @@ public class MovementAlterEgo : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 dir;
+    private MonologueAlterEgo monologueAlterEgo;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        monologueAlterEgo = GetComponent<MonologueAlterEgo>();
     }
 
     public void Stun(float stunTime)
@@ -24,6 +26,7 @@ public class MovementAlterEgo : MonoBehaviour
     IEnumerator StunCoroutine(float stunTime)
     {
         isStunned = true;
+        monologueAlterEgo.StartMonologue();
         yield return new WaitForSeconds(stunTime);
         isStunned = false;
     }
