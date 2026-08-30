@@ -1,16 +1,39 @@
 using UnityEngine;
 
-public class TransitionObject : MonoBehaviour
+public class TransitionObject : MonoBehaviour, IInteractable
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] private GameObject notificationPlace;
+    private PlayerInventory inventory;
+    private InteractPlayer interactPlayer;
+    private MonologueTrigger trigger;
+
+    private void Awake()
     {
-        
+        trigger = GetComponent<MonologueTrigger>();
+        inventory = FindFirstObjectByType<PlayerInventory>();
+        interactPlayer = FindFirstObjectByType<InteractPlayer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Interact()
     {
-        
+        if (inventory.GiveKey())
+        {
+            inventory.DestroyKey();
+            TransitionManager.instance.LoadScene(2);
+        }
+        else
+        {
+            interactPlayer.CantInteract(trigger);
+        }
+    }
+
+    public void OffFocus()
+    {
+        notificationPlace.SetActive(false);
+    }
+
+    public void OnFocus()
+    {
+        notificationPlace.SetActive(true);
     }
 }
