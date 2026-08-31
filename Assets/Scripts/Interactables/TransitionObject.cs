@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TransitionObject : MonoBehaviour, IInteractable
 {
@@ -19,7 +20,7 @@ public class TransitionObject : MonoBehaviour, IInteractable
         if (inventory.GiveKey())
         {
             inventory.DestroyKey();
-            TransitionManager.instance.LoadScene(2);
+            TransitionManager.instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
         else
         {

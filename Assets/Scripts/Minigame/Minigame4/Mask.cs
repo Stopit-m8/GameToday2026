@@ -39,6 +39,8 @@ public class Mask : MonoBehaviour, IPointerClickHandler
         if (maskActive)
         {
             OnMaskClick?.Invoke();
+            currTime = 0;
+            transform.DOShakePosition(1f, 10, 10, 90, false, true, ShakeRandomnessMode.Full);
             clickMeText.DOFade(0f, 1f);
             Debug.Log("la piz");
         }

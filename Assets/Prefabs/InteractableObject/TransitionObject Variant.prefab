@@ -12,13 +12,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: TransitionObject Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 2679661086030925017, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2679661086030925017, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1653472529
+      objectReference: {fileID: 0}
     - target: {fileID: 7617744953436251314, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.9449453
+      value: 7.5
       objectReference: {fileID: 0}
     - target: {fileID: 7617744953436251314, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.05094552
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7617744953436251314, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_LocalPosition.z

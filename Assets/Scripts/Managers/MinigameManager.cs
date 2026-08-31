@@ -9,16 +9,14 @@ public class MinigameManager : MonoBehaviour
     private CanvasGroup minigamePanel;
     [SerializeField] private GameObject minigameObject;
     [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private GameObject maskPrefab;
+    [SerializeField] private Transform spawnPoint;
 
     private void Awake()
     {
         if (instance == null)
         {
             instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
         }
     }
 
@@ -44,6 +42,7 @@ public class MinigameManager : MonoBehaviour
     public void FinishMinigame()
     {
         playerInput.actions.FindActionMap("Player").Enable();
+        Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity);
         ClosePanel(minigamePanel);
     }
 
