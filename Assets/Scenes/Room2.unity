@@ -5872,16 +5872,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030237281}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: 0.27469516, w: 0.9615314}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1722726533}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 31.888}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -54, y: 0}
+  m_AnchoredPosition: {x: -53.2, y: -19.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1030237283
@@ -11447,12 +11447,28 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 855565861}
     m_Modifications:
+    - target: {fileID: 367769244905825054, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 801
+      objectReference: {fileID: 0}
+    - target: {fileID: 367769244905825054, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 505
+      objectReference: {fileID: 0}
     - target: {fileID: 3069042508465309096, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2050862945046393459, guid: b80c1f9b6fcedfb4693d3ff595a74ccf, type: 3}
     - target: {fileID: 3795256330960647311, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795256330960647311, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3795256330960647311, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5304762954420595863, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
@@ -11547,7 +11563,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5889636041867157110, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 1009044761}
     - targetCorrespondingSourceObject: {fileID: 1578211363315035087, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       insertIndex: -1

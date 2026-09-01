@@ -288,6 +288,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1781294452}
     m_Modifications:
+    - target: {fileID: 1157674933072356720, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157674933072356720, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1157674933072356720, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2642680304459729956, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: m_Name
       value: Minigame3Panel

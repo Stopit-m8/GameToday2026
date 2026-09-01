@@ -11111,6 +11111,14 @@ PrefabInstance:
       propertyPath: m_Alpha
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 996107535447945557, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 996107535447945557, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1661641679199632900, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
