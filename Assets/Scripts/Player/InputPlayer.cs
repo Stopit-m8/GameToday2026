@@ -7,6 +7,7 @@ public class InputPlayer : MonoBehaviour
     private IMovement movementPlayer;
     private InteractPlayer interactPlayer;
     [SerializeField] private PlayerInput playerInput;
+    [SerializeField] private Pause pause;
 
     private void Awake()
     {
@@ -32,6 +33,16 @@ public class InputPlayer : MonoBehaviour
         {
             Debug.Log("interacted press");
             interactPlayer.Interact();
+        }
+    }
+
+    public void Pause(InputAction.CallbackContext ctx)
+    {
+        Debug.Log("try pause");
+        if (ctx.started)
+        {
+            Debug.Log("paused");
+            pause.OpenClosePause();
         }
     }
 

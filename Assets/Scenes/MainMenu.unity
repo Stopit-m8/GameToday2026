@@ -245,7 +245,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1593563801}
+      - m_Target: {fileID: 1641253618}
         m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
         m_MethodName: SetMasterVolume
         m_Mode: 1
@@ -1731,7 +1731,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1593563801}
+      - m_Target: {fileID: 1641253618}
         m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 1
@@ -3459,7 +3459,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1593563801}
+      - m_Target: {fileID: 1641253618}
         m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
         m_MethodName: SetSFXVolume
         m_Mode: 1
@@ -3505,7 +3505,6 @@ GameObject:
   - component: {fileID: 1593563799}
   - component: {fileID: 1593563798}
   - component: {fileID: 1593563797}
-  - component: {fileID: 1593563801}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3598,22 +3597,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1593563801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1593563796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7281e1725ebfc9640bdace050c76983d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: 51af83f686d16fd478da264d3e865de1, type: 2}
-  masterSlider: {fileID: 81844889}
-  musicSlider: {fileID: 832438515}
-  sfxSlider: {fileID: 1502977033}
 --- !u!1 &1641253612
 GameObject:
   m_ObjectHideFlags: 0
@@ -3627,6 +3610,7 @@ GameObject:
   - component: {fileID: 1641253615}
   - component: {fileID: 1641253614}
   - component: {fileID: 1641253617}
+  - component: {fileID: 1641253618}
   m_Layer: 5
   m_Name: SettingPanel
   m_TagString: Untagged
@@ -3734,6 +3718,22 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!114 &1641253618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641253612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7281e1725ebfc9640bdace050c76983d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: 51af83f686d16fd478da264d3e865de1, type: 2}
+  masterSlider: {fileID: 81844889}
+  musicSlider: {fileID: 832438515}
+  sfxSlider: {fileID: 1502977033}
 --- !u!1 &1644500623
 GameObject:
   m_ObjectHideFlags: 0
