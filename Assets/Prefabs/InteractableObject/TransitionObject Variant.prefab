@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 632085201288253916, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -4968159896499810811, guid: b93027355fa511f45958059a1e165ea9, type: 3}
     - target: {fileID: 2506655080037763507, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_Name
       value: TransitionObject Variant
@@ -19,6 +23,14 @@ PrefabInstance:
     - target: {fileID: 2679661086030925017, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_SortingLayerID
       value: 1653472529
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916116506932073833, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 6.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4916116506932073833, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 9.40625
       objectReference: {fileID: 0}
     - target: {fileID: 7617744953436251314, guid: e21dadedca510c84fbbaa795fe07d550, type: 3}
       propertyPath: m_LocalPosition.x

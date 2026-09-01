@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58964f1470f5d26458fb66da1bedf4f1, type: 3}
   m_Name: Star
   m_EditorClassIdentifier: 
-  sprite: {fileID: 532877248532749888, guid: 2f28a7041bc36b847a0a5e8f35ee22b1, type: 3}
+  sprite: {fileID: 532877248532749888, guid: 8ad2df10757bd1143aed84906aa27022, type: 3}
   moldType: 0

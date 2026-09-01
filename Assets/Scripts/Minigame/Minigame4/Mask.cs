@@ -4,6 +4,7 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class Mask : MonoBehaviour, IPointerClickHandler
 {
@@ -11,11 +12,27 @@ public class Mask : MonoBehaviour, IPointerClickHandler
     private bool maskActive = false;
     [SerializeField] private TMP_Text clickMeText;
     [SerializeField] private float clickMeTimeShow;
+    [SerializeField] private Image mask;
+    private Image people;
     private float currTime;
+
+    private void Awake()
+    {
+        people = GetComponent<Image>();
+    }
+
     public void ActivateMask()
     {
         maskActive = true;
+        people.DOColor(Color.white, 1f);
+        mask.DOColor(Color.white, 1f);
         StartCoroutine(ClickMeTextShow());
+    }
+
+    IEnumerator ActivateMaskCoroutine()
+    {
+        
+        yield return new WaitForSeconds(1f);
     }
 
     IEnumerator ClickMeTextShow()

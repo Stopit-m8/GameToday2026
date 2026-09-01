@@ -170,12 +170,12 @@ TextureImporter:
       name: kue mc_0
       rect:
         serializedVersion: 2
-        x: 131
-        y: 64
-        width: 258
-        height: 257
+        x: 10
+        y: 0
+        width: 512
+        height: 400
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: kue mc_1
       rect:
         serializedVersion: 2
-        x: 1411
-        y: 64
-        width: 258
-        height: 257
+        x: 1282
+        y: 0
+        width: 512
+        height: 400
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: kue mc_2
       rect:
         serializedVersion: 2
-        x: 2652
-        y: 17
-        width: 369
-        height: 335
+        x: 2554
+        y: 0
+        width: 512
+        height: 400
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []

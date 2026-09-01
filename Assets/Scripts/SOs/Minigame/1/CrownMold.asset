@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 58964f1470f5d26458fb66da1bedf4f1, type: 3}
-  m_Name: Diamond
+  m_Name: CrownMold
   m_EditorClassIdentifier: 
-  sprite: {fileID: 4552002792532334583, guid: 9ae86944a97eb034a931828cfebeb486, type: 3}
-  moldType: 1
+  sprite: {fileID: 0}
+  moldType: 2

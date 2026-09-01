@@ -8,6 +8,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
     [SerializeField] private Mask mask;
     [SerializeField] private int circlesLimit;
     [SerializeField] private int maskLimit;
+    [SerializeField] private Hands hands;
     private CirclePooling pool;
     private int circleClicked = 0;
     private int maskClicked = 0;
@@ -91,6 +92,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
     private void MaskClicked()
     {
         maskClicked++;
+        //hands.;
         Debug.Log($"mask clicked = {maskClicked}");
         if (maskClicked >= maskLimit)
         {
