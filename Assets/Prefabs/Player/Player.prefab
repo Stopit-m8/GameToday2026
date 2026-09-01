@@ -456,6 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInput: {fileID: 1746603513324888040}
+  pause: {fileID: 0}
 --- !u!114 &5241243294009392518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -634,6 +635,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 40be7c97-466c-46f5-b01e-20aabc87b3d4
     m_ActionName: 'Dialogue/Continue[/Mouse/leftButton,/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 240630474282666668}
+        m_TargetAssemblyTypeName: InputPlayer, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 43f84524-ee58-4e94-91d5-8768c9df290c
+    m_ActionName: 'Player/Pause[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
