@@ -92,7 +92,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
     private void MaskClicked()
     {
         maskClicked++;
-        //hands.;
+        hands.MoveHand(maskClicked, maskLimit);
         Debug.Log($"mask clicked = {maskClicked}");
         if (maskClicked >= maskLimit)
         {

@@ -3,6 +3,7 @@ using UnityEngine;
 public class MovementPlayer : MonoBehaviour, IMovement
 {
     [SerializeField] private float speed;
+    private Vector2 dir = new();
     private Rigidbody2D rb;
     private void Awake()
     {
@@ -11,7 +12,12 @@ public class MovementPlayer : MonoBehaviour, IMovement
 
     public void Move(Vector2 Dir)
     {
-        rb.linearVelocity = new Vector2(Dir.x * speed, rb.linearVelocityY);
+        dir = Dir;
         Debug.Log(rb.linearVelocityX);
+    }
+
+    private void FixedUpdate()
+    {
+        rb.linearVelocity = new Vector2(dir.x * speed, rb.linearVelocityY);
     }
 }

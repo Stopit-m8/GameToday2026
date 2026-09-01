@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using TMPro;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -10,6 +11,7 @@ public class Mask : MonoBehaviour, IPointerClickHandler
 {
     public event Action OnMaskClick;
     private bool maskActive = false;
+    [SerializeField] private Transform[] hands;
     [SerializeField] private TMP_Text clickMeText;
     [SerializeField] private float clickMeTimeShow;
     [SerializeField] private Image mask;
@@ -27,12 +29,6 @@ public class Mask : MonoBehaviour, IPointerClickHandler
         people.DOColor(Color.white, 1f);
         mask.DOColor(Color.white, 1f);
         StartCoroutine(ClickMeTextShow());
-    }
-
-    IEnumerator ActivateMaskCoroutine()
-    {
-        
-        yield return new WaitForSeconds(1f);
     }
 
     IEnumerator ClickMeTextShow()
@@ -57,10 +53,20 @@ public class Mask : MonoBehaviour, IPointerClickHandler
         {
             OnMaskClick?.Invoke();
             currTime = 0;
-            transform.DOShakePosition(1f, 10, 10, 90, false, true, ShakeRandomnessMode.Full);
+            ShakeStuff();
+            
             clickMeText.DOFade(0f, 1f);
             Debug.Log("la piz");
         }
         
+    }
+
+    private void ShakeStuff()
+    {
+        transform.DOShakePosition(1f, 10, 10, 90, false, true, ShakeRandomnessMode.Full);
+        foreach (Transform t in hands)
+        {
+            t.DOShakePosition(1f, 10, 10, 90, false, true, ShakeRandomnessMode.Full);
+        }
     }
 }

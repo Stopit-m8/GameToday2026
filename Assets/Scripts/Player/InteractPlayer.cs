@@ -3,13 +3,12 @@ using UnityEngine;
 public class InteractPlayer : MonoBehaviour
 {
     private IInteractable interactableInRange;
-    private Collider2D col;
+    [SerializeField] private Collider2D col;
     private PlayerInventory playerInventory;
 
     private void Awake()
     {
         playerInventory = GetComponent<PlayerInventory>();
-        col = GetComponent<Collider2D>();
     }
 
     public void Interact()
