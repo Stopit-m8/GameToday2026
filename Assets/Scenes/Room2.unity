@@ -404,7 +404,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770571064}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -492,7 +492,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -6119,6 +6119,7 @@ GameObject:
   - component: {fileID: 1030237282}
   - component: {fileID: 1030237284}
   - component: {fileID: 1030237283}
+  - component: {fileID: 1030237285}
   m_Layer: 5
   m_Name: DungBeetle
   m_TagString: Untagged
@@ -6183,6 +6184,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030237281}
   m_CullTransparentMesh: 1
+--- !u!95 &1030237285
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1030237281}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9b1dfa251de0b26488538a590856b542, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1156112505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13296,17 +13319,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a692d3d70f98c44458a6384b01cace13, type: 3}
---- !u!114 &1912892451 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4623206937973808805, guid: a692d3d70f98c44458a6384b01cace13, type: 3}
-  m_PrefabInstance: {fileID: 1912892450}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1eedfe76262feb429fdc8c73e2a8178, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1920890557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13377,10 +13389,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 240630474282666668, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
-      propertyPath: pause
-      value: 
-      objectReference: {fileID: 1912892451}
     - target: {fileID: 827922578213301273, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

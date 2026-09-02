@@ -94,6 +94,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 988b2e85c6d7bcb4aac775c79b2733c0, type: 2}
   - {fileID: 11400000, guid: 302dd52d59c069a448ae7ecf44add401, type: 2}
   - {fileID: 11400000, guid: 50075d685a96f204fbbd7619e9ae9e70, type: 2}
+  mcMolds:
+  - {fileID: 11400000, guid: 031699b80412c024c8c920e45e3b8e20, type: 2}
+  - {fileID: 11400000, guid: 964d17edcb82c7b459cda23b734dd75e, type: 2}
+  - {fileID: 11400000, guid: 69a94fbfe25a90746a8b3ad8bcce7b08, type: 2}
   fadeTime: 2
   currmold: {fileID: 0}
 --- !u!1 &8579832802693227297

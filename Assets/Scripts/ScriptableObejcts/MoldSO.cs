@@ -8,7 +8,8 @@ public class MoldSO : ScriptableObject
     {
         star,
         diamond,
-        crown
+        crown,
+        MC
     }
     public MoldType moldType;
 }
