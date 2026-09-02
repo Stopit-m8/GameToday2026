@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 01de534110fdc3d45b1e58e88b515ab8
+guid: 079e8332f45867a4f8b1610452a2b4e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6752578873776830985
-    second: tempat kuda yang ada isi_0
+      213: 2323749398036944500
+    second: papan_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tempat kuda yang ada isi_0
+      name: papan_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 16
         y: 0
-        width: 320
-        height: 512
+        width: 64
+        height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 90a764185baf5bd50800000000000000
-      internalID: 6752578873776830985
+      spriteID: 476150904cd9f3020800000000000000
+      internalID: 2323749398036944500
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: edda37886badf2a4ca5a77ab4cc88775
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      tempat kuda yang ada isi_0: 6752578873776830985
+      papan_0: 2323749398036944500
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
