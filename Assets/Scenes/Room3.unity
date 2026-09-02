@@ -310,7 +310,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3435447158194202314, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: m_Alpha
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4362924892595403202, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: glitchSprite

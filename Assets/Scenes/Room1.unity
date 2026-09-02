@@ -11429,7 +11429,7 @@ Transform:
   m_GameObject: {fileID: 1803477476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.315844, y: -1.6906999, z: -10}
+  m_LocalPosition: {x: -3.315844, y: -0.45, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11823,6 +11823,22 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9063875619396707160, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_Size.x
+      value: 0.71875
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063875619396707160, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9063875619396707160, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2104737906086838256, guid: f86b6935db9c0024e8a99cb1dbb66485, type: 3}
+    - target: {fileID: 9063875619396707160, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7094977672116551356, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
     m_RemovedGameObjects: []
@@ -12091,6 +12107,22 @@ PrefabInstance:
       propertyPath: BoundingShape2D
       value: 
       objectReference: {fileID: 2124249988}
+    - target: {fileID: 4701870266207616217, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
+      propertyPath: FollowOffset.y
+      value: 1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701870266207616217, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
+      propertyPath: TrackerSettings.PositionDamping.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701870266207616217, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
+      propertyPath: TrackerSettings.PositionDamping.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4701870266207616217, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
+      propertyPath: TrackerSettings.PositionDamping.z
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5984614498132608989, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
       propertyPath: m_Name
       value: CinemachineCamera
@@ -12101,7 +12133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637345377184557065, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.92
+      value: -0.44999993
       objectReference: {fileID: 0}
     - target: {fileID: 8637345377184557065, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
       propertyPath: m_LocalPosition.z
