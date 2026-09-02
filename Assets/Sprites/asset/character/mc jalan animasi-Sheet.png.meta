@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: c50f098abf10ae140becab942c5cebb3
+guid: 32e2fd89c3159d24eb1ff6246fe55770
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7158367997573229275
-    second: topeng hiasan_0
+      213: 4533651245973707674
+    second: mc jalan animasi-Sheet_0
   - first:
-      213: -8961615144712413120
-    second: topeng hiasan_1
+      213: -6258096237675392233
+    second: mc jalan animasi-Sheet_1
   - first:
-      213: -7681784107876392217
-    second: topeng hiasan_2
+      213: -908897604924156232
+    second: mc jalan animasi-Sheet_2
   - first:
-      213: -5280871227305032784
-    second: topeng hiasan_3
+      213: 4918352904391159575
+    second: mc jalan animasi-Sheet_3
+  - first:
+      213: 3490893699778326183
+    second: mc jalan animasi-Sheet_4
+  - first:
+      213: 5422025612411850222
+    second: mc jalan animasi-Sheet_5
+  - first:
+      213: -7444786597397212716
+    second: mc jalan animasi-Sheet_6
+  - first:
+      213: 5749762592603204615
+    second: mc jalan animasi-Sheet_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +134,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: topeng hiasan_0
+      name: mc jalan animasi-Sheet_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 243
-        width: 106
-        height: 266
+        x: 12
+        y: 0
+        width: 25
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bda60e264c1a75360800000000000000
-      internalID: 7158367997573229275
+      spriteID: a9b15c3b9c3caee30800000000000000
+      internalID: 4533651245973707674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_1
+      name: mc jalan animasi-Sheet_1
       rect:
         serializedVersion: 2
-        x: 247
-        y: 63
-        width: 58
-        height: 446
+        x: 76
+        y: 0
+        width: 25
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040e7ada182f1a380800000000000000
-      internalID: -8961615144712413120
+      spriteID: 713562fe0a6c629a0800000000000000
+      internalID: -6258096237675392233
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_2
+      name: mc jalan animasi-Sheet_2
       rect:
         serializedVersion: 2
-        x: 667
-        y: 351
-        width: 98
-        height: 158
+        x: 142
+        y: 0
+        width: 23
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +193,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e269c0cd02d46590800000000000000
-      internalID: -7681784107876392217
+      spriteID: 8b6da41a172f263f0800000000000000
+      internalID: -908897604924156232
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_3
+      name: mc jalan animasi-Sheet_3
       rect:
         serializedVersion: 2
-        x: 827
-        y: 243
-        width: 58
-        height: 266
+        x: 206
+        y: 0
+        width: 23
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +215,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b307e7199396b6b0800000000000000
-      internalID: -5280871227305032784
+      spriteID: 71fee3278ef714440800000000000000
+      internalID: 4918352904391159575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc jalan animasi-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 0
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aeafeb0355227030800000000000000
+      internalID: 3490893699778326183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc jalan animasi-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eedc0ee3197ee3b40800000000000000
+      internalID: 5422025612411850222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc jalan animasi-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d1dc89a80ecea890800000000000000
+      internalID: -7444786597397212716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mc jalan animasi-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 0
+        width: 25
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70c61fa4d924bcf40800000000000000
+      internalID: 5749762592603204615
       vertices: []
       indices: 
       edges: []
@@ -223,10 +323,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      topeng hiasan_0: 7158367997573229275
-      topeng hiasan_1: -8961615144712413120
-      topeng hiasan_2: -7681784107876392217
-      topeng hiasan_3: -5280871227305032784
+      mc jalan animasi-Sheet_0: 4533651245973707674
+      mc jalan animasi-Sheet_1: -6258096237675392233
+      mc jalan animasi-Sheet_2: -908897604924156232
+      mc jalan animasi-Sheet_3: 4918352904391159575
+      mc jalan animasi-Sheet_4: 3490893699778326183
+      mc jalan animasi-Sheet_5: 5422025612411850222
+      mc jalan animasi-Sheet_6: -7444786597397212716
+      mc jalan animasi-Sheet_7: 5749762592603204615
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

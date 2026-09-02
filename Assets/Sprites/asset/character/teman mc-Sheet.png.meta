@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: c50f098abf10ae140becab942c5cebb3
+guid: 83157278677df624082edb67a7d7fad5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7158367997573229275
-    second: topeng hiasan_0
+      213: 2663869780005333251
+    second: teman mc-Sheet_0
   - first:
-      213: -8961615144712413120
-    second: topeng hiasan_1
+      213: -553598708956225927
+    second: teman mc-Sheet_1
   - first:
-      213: -7681784107876392217
-    second: topeng hiasan_2
+      213: 5665072121824830521
+    second: teman mc-Sheet_2
   - first:
-      213: -5280871227305032784
-    second: topeng hiasan_3
+      213: 573615486249292299
+    second: teman mc-Sheet_3
+  - first:
+      213: -3361725591135252006
+    second: teman mc-Sheet_4
+  - first:
+      213: 2785088342905908155
+    second: teman mc-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: topeng hiasan_0
+      name: teman mc-Sheet_0
       rect:
         serializedVersion: 2
-        x: 83
-        y: 243
-        width: 106
-        height: 266
+        x: 10
+        y: 0
+        width: 24
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bda60e264c1a75360800000000000000
-      internalID: 7158367997573229275
+      spriteID: 309ad1d7377f7f420800000000000000
+      internalID: 2663869780005333251
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_1
+      name: teman mc-Sheet_1
       rect:
         serializedVersion: 2
-        x: 247
-        y: 63
-        width: 58
-        height: 446
+        x: 74
+        y: 0
+        width: 24
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 040e7ada182f1a380800000000000000
-      internalID: -8961615144712413120
+      spriteID: 97e9c8448e83158f0800000000000000
+      internalID: -553598708956225927
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_2
+      name: teman mc-Sheet_2
       rect:
         serializedVersion: 2
-        x: 667
-        y: 351
-        width: 98
-        height: 158
+        x: 137
+        y: 0
+        width: 27
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7e269c0cd02d46590800000000000000
-      internalID: -7681784107876392217
+      spriteID: 934665874116e9e40800000000000000
+      internalID: 5665072121824830521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: topeng hiasan_3
+      name: teman mc-Sheet_3
       rect:
         serializedVersion: 2
-        x: 827
-        y: 243
-        width: 58
-        height: 266
+        x: 201
+        y: 0
+        width: 27
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0b307e7199396b6b0800000000000000
-      internalID: -5280871227305032784
+      spriteID: b025d8fde34e5f700800000000000000
+      internalID: 573615486249292299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teman mc-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad11b04d260c851d0800000000000000
+      internalID: -3361725591135252006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: teman mc-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 24
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbbecf2871f96a620800000000000000
+      internalID: 2785088342905908155
       vertices: []
       indices: 
       edges: []
@@ -223,10 +273,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      topeng hiasan_0: 7158367997573229275
-      topeng hiasan_1: -8961615144712413120
-      topeng hiasan_2: -7681784107876392217
-      topeng hiasan_3: -5280871227305032784
+      teman mc-Sheet_0: 2663869780005333251
+      teman mc-Sheet_1: -553598708956225927
+      teman mc-Sheet_2: 5665072121824830521
+      teman mc-Sheet_3: 573615486249292299
+      teman mc-Sheet_4: -3361725591135252006
+      teman mc-Sheet_5: 2785088342905908155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
