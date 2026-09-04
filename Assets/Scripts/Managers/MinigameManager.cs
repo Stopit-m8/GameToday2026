@@ -42,7 +42,7 @@ public class MinigameManager : MonoBehaviour
     public void FinishMinigame()
     {
         playerInput.actions.FindActionMap("Player").Enable();
-        Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity);
+        Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
         ClosePanel(minigamePanel);
     }
 

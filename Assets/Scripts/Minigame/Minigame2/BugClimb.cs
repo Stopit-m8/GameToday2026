@@ -33,6 +33,7 @@ public class BugClimb : MonoBehaviour
         if (transform.position == endPoint.position)
         {
             OnArriveStart?.Invoke(true);
+            return;
         }
         else
         {
