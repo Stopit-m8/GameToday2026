@@ -29,4 +29,12 @@ public class CirclePooling : MonoBehaviour
         }
         return null;
     }
+
+    public void DisableAll()
+    {
+        for (int i = 0; i < pooledObjects.Count; i++)
+        {
+            pooledObjects[i].SetActive(false);
+        }
+    }
 }

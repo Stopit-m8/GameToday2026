@@ -48,6 +48,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4809223030977245657, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 24bc06d254d46e344ba3fdc28d862879, type: 2}
+    - target: {fileID: 6078883334867902419, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078883334867902419, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078883334867902419, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 7352239472583992428, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       propertyPath: m_Name
       value: UnderwaterPlayer
@@ -58,20 +74,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8840836803177300048, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       propertyPath: m_GravityScale
-      value: 0
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 8840836803177300048, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       propertyPath: m_LinearDamping
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9063875619396707160, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6181333318011795759, guid: 9f6a099a782ee6b4996b53fc057b31da, type: 3}
     m_RemovedComponents:
     - {fileID: 5241243294009392518, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+    - {fileID: 4112159177963258591, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7352239472583992428, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       insertIndex: 5
       addedObject: {fileID: 2593118952860252771}
+    - targetCorrespondingSourceObject: {fileID: 3564654944569379385, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2490402000925449596}
   m_SourcePrefab: {fileID: 100100000, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
 --- !u!1 &104825888453173893 stripped
 GameObject:
@@ -92,3 +116,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 10
   maxSpeed: 5
+--- !u!1 &6198147734622997712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3564654944569379385, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+  m_PrefabInstance: {fileID: 7456848619253876457}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2490402000925449596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6198147734622997712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1691aa6c0585c4a9a1034d597f00fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

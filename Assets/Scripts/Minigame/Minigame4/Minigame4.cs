@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 
@@ -106,6 +107,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
 
     private void StartMaskClick()
     {
+        pool.DisableAll();
         mask.ActivateMask();
     }
 }

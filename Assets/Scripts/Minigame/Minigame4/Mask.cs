@@ -25,6 +25,7 @@ public class Mask : MonoBehaviour, IPointerClickHandler
 
     public void ActivateMask()
     {
+
         maskActive = true;
         people.DOColor(Color.white, 1f);
         mask.DOColor(Color.white, 1f);

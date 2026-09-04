@@ -271,6 +271,7 @@ GameObject:
   - component: {fileID: 175161017}
   - component: {fileID: 175161019}
   - component: {fileID: 175161018}
+  - component: {fileID: 175161020}
   m_Layer: 0
   m_Name: RockTilemap
   m_TagString: Untagged
@@ -16819,6 +16820,44 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &175161020
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175161016}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1 &444109879
 GameObject:
   m_ObjectHideFlags: 0
@@ -17178,26 +17217,6 @@ PrefabInstance:
     - target: {fileID: 104825888453173893, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: m_Name
       value: UnderwaterPlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -6181333318011795759, guid: 9f6a099a782ee6b4996b53fc057b31da, type: 3}
-    - target: {fileID: 2147366502580881081, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
-      propertyPath: m_GravityScale
-      value: 0.001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7217836901552475205, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: pause
@@ -44231,11 +44250,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 636542295
+  m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 9010807953457224674, guid: 9f6a099a782ee6b4996b53fc057b31da, type: 3}
+  m_Color: {r: 0.17735851, g: 0.17735851, b: 0.17735851, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
