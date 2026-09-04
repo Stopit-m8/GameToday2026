@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58964f1470f5d26458fb66da1bedf4f1, type: 3}
   m_Name: StarMold
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -330520107364425034, guid: 8b8001374a127cc419b22dac5b9366b1, type: 3}
   moldType: 0

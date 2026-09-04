@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Diamond
   m_EditorClassIdentifier: 
   sprite: {fileID: 4552002792532334583, guid: 9ae86944a97eb034a931828cfebeb486, type: 3}
+  crackedSprite: {fileID: -6426411768760507339, guid: ac9d6763333bff048a4914c245d49f73, type: 3}
   moldType: 1

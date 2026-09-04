@@ -4,6 +4,8 @@ using UnityEngine;
 public class MoldSO : ScriptableObject
 {
     public Sprite sprite;
+    public Sprite cuttedSprite;
+    public Sprite crackedSprite;
     public enum MoldType
     {
         star,

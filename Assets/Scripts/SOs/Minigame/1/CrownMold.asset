@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58964f1470f5d26458fb66da1bedf4f1, type: 3}
   m_Name: CrownMold
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: -5986696566143796778, guid: 9587d4116d656a64682777b1681d4271, type: 3}
   moldType: 2

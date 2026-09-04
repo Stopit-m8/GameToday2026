@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58964f1470f5d26458fb66da1bedf4f1, type: 3}
   m_Name: DiamondMold
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 2234407720831251787, guid: 3a54ad4762f2bb64eac875137932788c, type: 3}
   moldType: 1

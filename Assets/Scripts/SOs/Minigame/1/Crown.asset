@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: Crown
   m_EditorClassIdentifier: 
   sprite: {fileID: -7434555266931585919, guid: cf87f1b81ed3b6a4783bdc3cf1fbd8d0, type: 3}
+  crackedSprite: {fileID: -7571115789490352803, guid: b67dca43a1a73fb40ae43ae0ec6210ba, type: 3}
   moldType: 2
