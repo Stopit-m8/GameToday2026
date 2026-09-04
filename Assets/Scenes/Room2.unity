@@ -11130,14 +11130,6 @@ PrefabInstance:
       propertyPath: pause
       value: 
       objectReference: {fileID: 187713004}
-    - target: {fileID: 269720245858544252, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
-      propertyPath: m_PointLightInnerRadius
-      value: 1.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 269720245858544252, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
-      propertyPath: m_PointLightOuterRadius
-      value: 5.92
-      objectReference: {fileID: 0}
     - target: {fileID: 827922578213301273, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
