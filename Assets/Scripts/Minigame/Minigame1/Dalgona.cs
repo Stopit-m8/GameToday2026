@@ -63,11 +63,14 @@ public class Dalgona : MonoBehaviour
         {
             if (success)
             {
+                ChangeAppearenceCut();
                 Debug.Log("Dalgona and mold is the same");
             }
             else
             {
+
                 moldObject.transform.DOShakePosition(1f, 10f);
+                ChangeAppearenceCracked();
                 Debug.Log("Dalgona breaks");
             }
             yield return new WaitForSeconds(fadeTime);
@@ -97,6 +100,16 @@ public class Dalgona : MonoBehaviour
             yield return new WaitForSeconds(fadeTime);
             OnDalgonaChecked?.Invoke(success, mcDalgonaActive);
         }
+    }
+
+    public void ChangeAppearenceCut()
+    {
+        image.sprite = currmold.cuttedSprite;
+    }
+
+    public void ChangeAppearenceCracked()
+    {
+        image.sprite = currmold.crackedSprite;
     }
 
     public void Initialize()

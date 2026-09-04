@@ -224,7 +224,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2305170092169759305}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -243,7 +243,7 @@ MonoBehaviour:
   successText: {fileID: 4698582424453241223}
   dalgonaPrefab: {fileID: 1771516336985190874, guid: 185897ca760caf74683bf02f43b6614d, type: 3}
   dalgonaSpawnPoint: {fileID: 1838160968533523808}
-  maxSuccess: 5
+  maxSuccess: 1
 --- !u!1 &4274730995437521213
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,7 +480,7 @@ PrefabInstance:
     - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
       propertyPath: moldSO
       value: 
-      objectReference: {fileID: 11400000, guid: 302dd52d59c069a448ae7ecf44add401, type: 2}
+      objectReference: {fileID: 11400000, guid: 3cfba41ea0846de488ddc3642b4f2f78, type: 2}
     - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
       propertyPath: minigame
       value: 
@@ -626,6 +626,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6444129212332099621}
     m_Modifications:
+    - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
+      propertyPath: moldSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 06a255f7eb89e9546965fe2bb35a214d, type: 2}
     - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
       propertyPath: minigame
       value: 
@@ -774,7 +778,7 @@ PrefabInstance:
     - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
       propertyPath: moldSO
       value: 
-      objectReference: {fileID: 11400000, guid: 50075d685a96f204fbbd7619e9ae9e70, type: 2}
+      objectReference: {fileID: 11400000, guid: a7a70a37b6f9def48bd444033034a5e7, type: 2}
     - target: {fileID: 1416165064104620380, guid: eaddccbdb0f49054da0f34035e3b86d1, type: 3}
       propertyPath: minigame
       value: 

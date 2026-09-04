@@ -221,7 +221,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8637345377184557065, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 1.47
       objectReference: {fileID: 0}
     - target: {fileID: 8637345377184557065, guid: a20206c1dca9e9b458924def25ffce39, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17179,6 +17179,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnderwaterPlayer
       objectReference: {fileID: 0}
+    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6181333318011795759, guid: 9f6a099a782ee6b4996b53fc057b31da, type: 3}
+    - target: {fileID: 2147366502580881081, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_GravityScale
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3684090043773393210, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 7217836901552475205, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: pause
       value: 
@@ -17569,7 +17589,7 @@ Transform:
   m_GameObject: {fileID: 706707698}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 1.47, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17882,7 +17902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1015792500
 Transform:
   m_ObjectHideFlags: 0
