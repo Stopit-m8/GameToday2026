@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 1a21cd4806f61a7488b5a7726a7974e6
+guid: 45b222551c530dc4d833b9d51c7bf83d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8713770233958336907
-    second: kandang kuda kosongi_0
+      213: 7939127097416474533
+    second: tempat minigame kue_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: kandang kuda kosongi_0
+      name: tempat minigame kue_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 320
-        height: 512
+        height: 100
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b8985793cd78de870800000000000000
-      internalID: 8713770233958336907
+      spriteID: 5afdf2428027d2e60800000000000000
+      internalID: 7939127097416474533
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      kandang kuda kosongi_0: 8713770233958336907
+      tempat minigame kue_0: 7939127097416474533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
