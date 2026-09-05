@@ -17,7 +17,7 @@ public class TransitionObject : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        if (inventory.GiveKey())
+        if (inventory.GiveKey() > 0)
         {
             inventory.DestroyKey();
             TransitionManager.instance.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

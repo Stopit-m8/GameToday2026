@@ -343,7 +343,7 @@ GameObject:
   - component: {fileID: 5254866947893163374}
   - component: {fileID: 2092957555583522091}
   m_Layer: 3
-  m_Name: DialogueCanvas
+  m_Name: MonologueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,7 +828,7 @@ GameObject:
   - component: {fileID: 2800789416379612847}
   - component: {fileID: 5410060269901565113}
   m_Layer: 3
-  m_Name: DialoguePanel
+  m_Name: MonologuePanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

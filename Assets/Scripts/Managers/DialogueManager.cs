@@ -9,9 +9,13 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
     private Queue<DialogueLines> sentences;
+    private Sprite prevBackgroundSprite;
     private Sprite prevLeftSprite;
     private Sprite prevRightSprite;
+    private Image backGroundImage;
+    private CanvasGroup backGroundCanvasGroup;
 
+    [SerializeField] private GameObject backGround;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text textArea;
     [SerializeField] private Image leftImage;
@@ -29,10 +33,8 @@ public class DialogueManager : MonoBehaviour
         {
             instance = this;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        backGroundImage = backGround.GetComponent<Image>();
+        backGroundCanvasGroup = backGround.GetComponent<CanvasGroup>();
     }
 
     
@@ -60,12 +62,28 @@ public class DialogueManager : MonoBehaviour
             map.Disable();
         }
         playerInput.actions.FindActionMap("Dialogue").Enable();
+        EnableGroup();
+
         sentences.Clear();
         foreach (DialogueLines dialogueLines in dialogue.dialogueLines)
         {
             sentences.Enqueue(dialogueLines);
         }
         DisplayNextSentence();
+    }
+
+    private void EnableGroup()
+    {
+        backGroundCanvasGroup.alpha = 1;
+        backGroundCanvasGroup.interactable = true;
+        backGroundCanvasGroup.blocksRaycasts = true;
+    }
+
+    private void DisableGroup()
+    {
+        backGroundCanvasGroup.alpha = 0;
+        backGroundCanvasGroup.interactable = false;
+        backGroundCanvasGroup.blocksRaycasts = false;
     }
 
     public void DisplayNextSentence()
@@ -101,10 +119,20 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayImage(DialogueLines dialogueLine)
     {
+        Sprite bgImage = dialogueLine.background;
         Sprite leftSprite = dialogueLine.leftSprite;
         Sprite rightSprite = dialogueLine.rightSprite;
         Image activeImage = dialogueLine.onLeft ? leftImage : rightImage;
         Image inactiveImage = dialogueLine.onLeft ? rightImage : leftImage;
+
+        if (bgImage == null)
+        {
+            bgImage = prevBackgroundSprite;
+        }
+        else
+        {
+            prevBackgroundSprite = bgImage;
+        }
 
         if (leftSprite == null)
         {
@@ -124,6 +152,7 @@ public class DialogueManager : MonoBehaviour
             prevRightSprite = rightSprite;
         }
 
+        backGroundImage.sprite = bgImage;
         leftImage.sprite = leftSprite;
         rightImage.sprite = rightSprite;
 
@@ -140,6 +169,7 @@ public class DialogueManager : MonoBehaviour
 
     private void EndDialogue()
     {
+        DisableGroup();
         foreach (var map in playerInput.actions.actionMaps)
         {
             map.Disable();

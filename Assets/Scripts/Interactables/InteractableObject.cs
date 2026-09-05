@@ -14,7 +14,6 @@ public class InteractableObject : MonoBehaviour, IInteractable
     {
         inventory.GetKey();
         Destroy(gameObject);
-        Debug.Log("Kontol");
     }
 
     public void OffFocus()

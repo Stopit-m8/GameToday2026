@@ -5,6 +5,7 @@ using UnityEngine;
 public class DialogueLines
 {
     public string name;
+    public Sprite background;
     public Sprite leftSprite;
     public Sprite rightSprite;
     [TextArea(3,5)]

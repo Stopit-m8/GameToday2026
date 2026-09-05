@@ -1,8 +1,10 @@
+using System;
 using UnityEngine;
 
 public class PlayerInventory : MonoBehaviour
 {
-    private bool hasKey = false;
+    public event Action<int> OnKeyCountChanged;
+    private int hasKey = 0;
 
     private void Update()
     {
@@ -11,16 +13,17 @@ public class PlayerInventory : MonoBehaviour
 
     public void GetKey()
     {
-        hasKey = true;
+        hasKey++;
+        OnKeyCountChanged?.Invoke(hasKey);
     }
 
-    public bool GiveKey()
+    public int GiveKey()
     {
         return hasKey;
     }
 
     public void DestroyKey()
     {
-        hasKey = false;
+        hasKey = 0;
     }
 }
