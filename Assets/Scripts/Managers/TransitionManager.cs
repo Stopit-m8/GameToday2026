@@ -25,12 +25,26 @@ public class TransitionManager : MonoBehaviour
         StartCoroutine(StartLoadScene(sceneIndex));
     }
 
+    public void LoadScene(string sceneName)
+    {
+        StartCoroutine(StartLoadScene(sceneName));
+    }
+
     IEnumerator StartLoadScene(int sceneIndex)
     {
         animator.SetTrigger("FadeIn");
         
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(sceneIndex);
+        animator.SetTrigger("FadeOut");
+    }
+
+    IEnumerator StartLoadScene(string sceneName)
+    {
+        animator.SetTrigger("FadeIn");
+
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(sceneName);
         animator.SetTrigger("FadeOut");
     }
 }

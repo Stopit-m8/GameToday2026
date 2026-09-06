@@ -9,17 +9,14 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
     private Queue<DialogueLines> sentences;
-    private Sprite prevBackgroundSprite;
-    private Sprite prevLeftSprite;
-    private Sprite prevRightSprite;
     private Image backGroundImage;
     private CanvasGroup backGroundCanvasGroup;
+    private bool changeScene;
+    private string sceneName;
 
     [SerializeField] private GameObject backGround;
     [SerializeField] private TMP_Text nameText;
     [SerializeField] private TMP_Text textArea;
-    [SerializeField] private Image leftImage;
-    [SerializeField] private Image rightImage;
 
     public bool isTyping { get; private set; }
     private float typeSpeed;
@@ -35,12 +32,6 @@ public class DialogueManager : MonoBehaviour
         }
         backGroundImage = backGround.GetComponent<Image>();
         backGroundCanvasGroup = backGround.GetComponent<CanvasGroup>();
-    }
-
-    
-
-    private void Start()
-    {
         sentences = new Queue<DialogueLines>();
         typeSpeed = normalTypeSpeed;
     }
@@ -57,6 +48,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
+        changeScene = dialogue.changeScene;
+        sceneName = dialogue.sceneName;
         foreach (var map in playerInput.actions.actionMaps)
         {
             map.Disable();
@@ -84,6 +77,13 @@ public class DialogueManager : MonoBehaviour
         backGroundCanvasGroup.alpha = 0;
         backGroundCanvasGroup.interactable = false;
         backGroundCanvasGroup.blocksRaycasts = false;
+    }
+
+    private void ChangeOpacity(Image image, float opacity)
+    {
+        Color color = image.color;
+        color.a = opacity;
+        image.color = color;
     }
 
     public void DisplayNextSentence()
@@ -120,51 +120,17 @@ public class DialogueManager : MonoBehaviour
     private void DisplayImage(DialogueLines dialogueLine)
     {
         Sprite bgImage = dialogueLine.background;
-        Sprite leftSprite = dialogueLine.leftSprite;
-        Sprite rightSprite = dialogueLine.rightSprite;
-        Image activeImage = dialogueLine.onLeft ? leftImage : rightImage;
-        Image inactiveImage = dialogueLine.onLeft ? rightImage : leftImage;
 
         if (bgImage == null)
         {
-            bgImage = prevBackgroundSprite;
+            ChangeOpacity(backGroundImage, 0f);
         }
         else
         {
-            prevBackgroundSprite = bgImage;
-        }
-
-        if (leftSprite == null)
-        {
-            leftSprite = prevLeftSprite;
-        }
-        else
-        {
-            prevLeftSprite = leftSprite;
-        }
-
-        if (rightSprite == null)
-        {
-            rightSprite = prevRightSprite;
-        }
-        else
-        {
-            prevRightSprite = rightSprite;
+            ChangeOpacity(backGroundImage, 1f);
         }
 
         backGroundImage.sprite = bgImage;
-        leftImage.sprite = leftSprite;
-        rightImage.sprite = rightSprite;
-
-        ChangeOpacity(activeImage, 1f);
-        ChangeOpacity(inactiveImage, 0.5f);
-    }
-
-    private void ChangeOpacity(Image image, float opacity)
-    {
-        Color color = image.color;
-        color.a = opacity;
-        image.color = color;
     }
 
     private void EndDialogue()
@@ -175,6 +141,10 @@ public class DialogueManager : MonoBehaviour
             map.Disable();
         }
         playerInput.actions.FindActionMap("Player").Enable();
+        if (changeScene)
+        {
+            TransitionManager.instance.LoadScene(sceneName);
+        }
         Debug.Log("End of conv");
     }
 }

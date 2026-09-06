@@ -44,10 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6674f7b3df47443985d58288c12c1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  backGround: {fileID: 0}
   nameText: {fileID: 0}
   textArea: {fileID: 0}
-  leftImage: {fileID: 0}
-  rightImage: {fileID: 0}
   normalTypeSpeed: 0.05
   fastTypeSpeed: 0.001
   playerInput: {fileID: 0}
