@@ -10150,6 +10150,18 @@ PrefabInstance:
       propertyPath: ballImage
       value: 
       objectReference: {fileID: 170533709}
+    - target: {fileID: 6789941683308754339, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6789941683308754339, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1bde2756904fb4944b43bab69dd16399, type: 3}
+    - target: {fileID: 6789941683308754339, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6837061347992088972, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       propertyPath: m_Name
       value: Minigame2Panel

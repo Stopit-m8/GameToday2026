@@ -9919,6 +9919,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minigame1Panel
       objectReference: {fileID: 0}
+    - target: {fileID: 3426784759862801325, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4698582424453241223, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 9c02db78a03d1db41aceedb4e1f7f24e, type: 2}
+    - target: {fileID: 4698582424453241223, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 578578875582146497, guid: 9c02db78a03d1db41aceedb4e1f7f24e, type: 2}
+    - target: {fileID: 4698582424453241223, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5938999631839748041, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -9950,10 +9966,42 @@ PrefabInstance:
     - target: {fileID: 6146007471772039893, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858722518858266535, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.2578616
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858722518858266535, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.2578616
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858722518858266535, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.2578616
+      objectReference: {fileID: 0}
+    - target: {fileID: 6993986425359792063, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7235434343424183505, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
       propertyPath: maxSuccess
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7363156762701910691, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360382658991097441, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360382658991097441, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.g
+      value: 0.68235296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360382658991097441, guid: 8b15e5e1d23426046b5f78acbab2ce0c, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6901961
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
