@@ -4,6 +4,7 @@ using UnityEngine.EventSystems;
 public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IDropHandler
 {
     [SerializeField] private RectTransform endPoint;
+    [SerializeField] private float snappingThreshold = 0.5f;
     private Vector2 distance;
     private RectTransform rectTransform;
     private bool isDragging = false;
@@ -35,6 +36,12 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
 
     public void OnDrop(PointerEventData eventData)
     {
-        throw new System.NotImplementedException();
+        float distanceToEndPoint = Vector2.Distance(rectTransform.position, endPoint.position);
+        Debug.Log(distanceToEndPoint);
+        if (distanceToEndPoint < snappingThreshold)
+        {
+            rectTransform.position = endPoint.position;
+            Debug.Log("snapped");
+        }
     }
 }
