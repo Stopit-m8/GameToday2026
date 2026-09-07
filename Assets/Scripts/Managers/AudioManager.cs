@@ -7,8 +7,25 @@ public class AudioManager : MonoBehaviour
     [SerializeField] private AudioSource musicSource;
     [SerializeField] private AudioSource sfxSource;
 
-    [Header("Audio Clip")]
-    public AudioClip BGM;
+    [Header("Audio Clip BGM")]
+    public AudioClip CutsceneEnding;
+    public AudioClip CutsceneAwal;
+    public AudioClip GameplayAkhir;
+    public AudioClip GameplayAwal;
+    public AudioClip MainMenu;
+
+    [Header("Audio Clip SFX")]
+    public AudioClip BeetleWalk;
+    public AudioClip Button;
+    public AudioClip CookiePan;
+    public AudioClip DialogueBeep;
+    public AudioClip Mask;
+    public AudioClip Panel;
+    public AudioClip PlacePuzzle;
+    public AudioClip Scream;
+    public AudioClip Swim;
+    public AudioClip Walk;
+
 
     private void Awake()
     {
@@ -25,7 +42,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        musicSource.clip = BGM;
+        musicSource.clip = MainMenu;
         musicSource.Play();
     }
 

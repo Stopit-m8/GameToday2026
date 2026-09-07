@@ -2314,7 +2314,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicSource: {fileID: 915555225}
   sfxSource: {fileID: 1010258288}
-  BGM: {fileID: 8300000, guid: 1a25d098bf313bb46a5636700e7545b2, type: 3}
+  CutsceneEnding: {fileID: 8300000, guid: 9b8774b3d6905a64a9298d0aca185cf3, type: 3}
+  CutsceneAwal: {fileID: 8300000, guid: 33710a5f6c064bb46aaf24b4f729ef69, type: 3}
+  GameplayAkhir: {fileID: 8300000, guid: 3bd299f7f01628844b327877111ed1b4, type: 3}
+  GameplayAwal: {fileID: 8300000, guid: 66080bdb0e776984f885e25e4892b853, type: 3}
+  MainMenu: {fileID: 8300000, guid: 9fb85a7f21dff4a4096e30f441acf633, type: 3}
+  BeetleWalk: {fileID: 8300000, guid: f42e30523cd39aa44bb54f353c44850c, type: 3}
+  Button: {fileID: 8300000, guid: 782d621465e653540b0cfe4321327e7a, type: 3}
+  CookiePan: {fileID: 8300000, guid: 35ec2714a50059e42a9dac99263cf53b, type: 3}
+  DialogueBeep: {fileID: 8300000, guid: 455f08e29b02e4d4cbda989681e34c82, type: 3}
+  Mask: {fileID: 8300000, guid: 393d8abcd90da704eaf29b2333654b1e, type: 3}
+  Panel: {fileID: 8300000, guid: aca2d70d952427941a4af95de82c5dba, type: 3}
+  PlacePuzzle: {fileID: 8300000, guid: 6fc66bc9ec643384cb5f4acac043c6d9, type: 3}
+  Scream: {fileID: 8300000, guid: 1493ef1ab4619b74ab4271fbf0ff15f7, type: 3}
+  Swim: {fileID: 8300000, guid: 1a3b620f355b889408d14fa2badc8e51, type: 3}
+  Walk: {fileID: 8300000, guid: 40329354484f8b4478ac3ec15ef5f678, type: 3}
 --- !u!1 &1057792169
 GameObject:
   m_ObjectHideFlags: 0
