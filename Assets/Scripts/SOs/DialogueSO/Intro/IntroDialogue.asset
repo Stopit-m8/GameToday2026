@@ -83,27 +83,27 @@ MonoBehaviour:
       sentence: ...
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
-      sentence: ... /background gelap
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
+      sentence: ...
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: ...
       onLeft: 0
     - name: Rina
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Nar? Are you okay?
       onLeft: 0
     - name: Rina
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Nar...?
       onLeft: 0
     - name: Rina
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Nara?!
       onLeft: 0
     - name: Rina
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: NARA?!
       onLeft: 0
     changeScene: 1
