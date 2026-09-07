@@ -1,6 +1,7 @@
 using DG.Tweening;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Minigame4 : MonoBehaviour, IMinigame
 {
@@ -10,6 +11,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
     [SerializeField] private int circlesLimit;
     [SerializeField] private int maskLimit;
     [SerializeField] private Hands hands;
+    [SerializeField] private PlayableDirector timeline;
     private CirclePooling pool;
     private int circleClicked = 0;
     private int maskClicked = 0;
@@ -30,6 +32,11 @@ public class Minigame4 : MonoBehaviour, IMinigame
         minigameIsActive = true;
         mask.OnMaskClick += MaskClicked;
         StartCoroutine(SpawnCircleCoroutine());
+    }
+
+    public void PlayTimeline()
+    {
+        timeline.Play();
     }
 
     public void StopMinigame()
@@ -98,7 +105,8 @@ public class Minigame4 : MonoBehaviour, IMinigame
         if (maskClicked >= maskLimit)
         {
             StopAllCoroutines();
-            StopMinigame();
+            //StopMinigame();
+            PlayTimeline();
             return;
         }
         

@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Playables;
 
 public class Minigame2 : MonoBehaviour, IMinigame
 {
     [SerializeField] private BugClimb bugClimb;
     private bool isFinished = false;
+    [SerializeField] private PlayableDirector timeline;
     public void StartMinigame()
     {
         bugClimb.ResetProgress();
@@ -14,7 +16,8 @@ public class Minigame2 : MonoBehaviour, IMinigame
     {
         if (finishStatus && !isFinished)
         {
-            StopMinigame();
+            //StopMinigame();
+            timeline.Play();
             isFinished = true;
         }
     }
