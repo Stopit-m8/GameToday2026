@@ -116,9 +116,9 @@ TextureImporter:
       name: tempat kuda yang ada isi1_0
       rect:
         serializedVersion: 2
-        x: 15
+        x: 16
         y: 0
-        width: 81
+        width: 80
         height: 128
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 11551c1cc734b8a4aa13e4407f2e34a2
     internalID: 0
     vertices: []
     indices: 
