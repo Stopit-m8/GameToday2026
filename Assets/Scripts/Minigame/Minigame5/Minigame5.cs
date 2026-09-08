@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class Minigame5 : MonoBehaviour, IMinigame
 {
-    private PlayerInventory inventory;
-    [SerializeField] int keyCountToStart = 4;
+    private CutSceneManager cutSceneManager;
+
+    private void Awake()
+    {
+        cutSceneManager = FindFirstObjectByType<CutSceneManager>();
+        cutSceneManager.OnAllKeysCollected += StartMinigame;
+    }
 
     public void StartMinigame()
     {
@@ -12,22 +17,12 @@ public class Minigame5 : MonoBehaviour, IMinigame
 
     public void StopMinigame()
     {
-        throw new System.NotImplementedException();
+        cutSceneManager.OnAllKeysCollected -= StartMinigame;
     }
 
-    private void Awake()
-    {
-        inventory = FindFirstObjectByType<PlayerInventory>();
-        inventory.OnKeyCountChanged += CheckKeyCount;
-    }
+    
 
-    private void CheckKeyCount(int key)
-    {
-        if (key == keyCountToStart)
-        {
-            StartMinigame();
-        }
-    }
+    
 
 
 }
