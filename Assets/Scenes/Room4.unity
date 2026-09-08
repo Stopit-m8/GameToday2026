@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: timeline
       value: 
       objectReference: {fileID: 1107552576}
+    - target: {fileID: 8244658055338078615, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
+      propertyPath: circlesLimit
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8719111590796559825, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
       propertyPath: canvas
       value: 
