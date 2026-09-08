@@ -6,6 +6,7 @@ public class TransitionManager : MonoBehaviour
 {
     public static TransitionManager instance;
     [SerializeField] private Animator animator;
+    private bool isTransitioning = false;
 
     private void Awake()
     {
@@ -32,19 +33,32 @@ public class TransitionManager : MonoBehaviour
 
     IEnumerator StartLoadScene(int sceneIndex)
     {
-        animator.SetTrigger("FadeIn");
+        if (!isTransitioning)
+        {
+            isTransitioning = true;
+            animator.SetTrigger("FadeIn");
+
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(sceneIndex);
+            animator.SetTrigger("FadeOut");
+            isTransitioning = false;
+        }
         
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(sceneIndex);
-        animator.SetTrigger("FadeOut");
     }
 
     IEnumerator StartLoadScene(string sceneName)
     {
-        animator.SetTrigger("FadeIn");
+        if (!isTransitioning)
+        {
+            isTransitioning = true;
 
-        yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene(sceneName);
-        animator.SetTrigger("FadeOut");
+            animator.SetTrigger("FadeIn");
+
+            yield return new WaitForSeconds(1f);
+            SceneManager.LoadScene(sceneName);
+            animator.SetTrigger("FadeOut");
+            isTransitioning = false;
+        }
+        
     }
 }

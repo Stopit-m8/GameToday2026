@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 1937002644251591085}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.42, z: 0}
+  m_LocalPosition: {x: 49.05, y: -2.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -78,5 +78,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   minigameObject: {fileID: 0}
   playerInput: {fileID: 0}
-  maskPrefab: {fileID: 1921801935039108293, guid: e805e38e1b8784440afe5a3c8d363bcd, type: 3}
   spawnPoint: {fileID: 4410623014636867990}
+  maskPrefab: {fileID: 1921801935039108293, guid: e805e38e1b8784440afe5a3c8d363bcd, type: 3}
+  maskSprite: {fileID: 0}

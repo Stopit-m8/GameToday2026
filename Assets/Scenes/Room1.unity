@@ -10357,6 +10357,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1434574633872484093, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
+      propertyPath: maskSprite
+      value: 
+      objectReference: {fileID: 3637724641804385441, guid: 4947953495c06ad43bcab5e34ae8f988, type: 3}
+    - target: {fileID: 1434574633872484093, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 1317743302}
@@ -10403,14 +10407,6 @@ PrefabInstance:
     - target: {fileID: 2651552778805795841, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410623014636867990, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 49.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4410623014636867990, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.34
       objectReference: {fileID: 0}
     - target: {fileID: 5259668609080001316, guid: d27ab54b22b1b0d47b435b5633e1f2b6, type: 3}
       propertyPath: m_Name

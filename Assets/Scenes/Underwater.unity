@@ -17324,7 +17324,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -394.92}
+  m_AnchoredPosition: {x: 0, y: -394.92004}
   m_SizeDelta: {x: 1591.16, y: -789.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &474952972
@@ -17535,10 +17535,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 13, y: 14}
-      - {x: -20, y: 14}
-      - {x: -20, y: -14}
-      - {x: 13, y: -14}
+    - - {x: 32, y: 22}
+      - {x: -39.5, y: 22}
+      - {x: -39.5, y: -14}
+      - {x: 32, y: -14}
   m_UseDelaunayMesh: 0
 --- !u!1 &612605852
 GameObject:
@@ -18296,7 +18296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1015792500
 Transform:
   m_ObjectHideFlags: 0
