@@ -22,7 +22,12 @@ public class CutSceneManager : MonoBehaviour
         }
         else
         {
-            PlayDialogue(key);
+            PlayDialogue(key-1);
         }
+    }
+
+    private void PlayDialogue(int dialogueIndex)
+    {
+        DialogueManager.instance.StartDialogue(dialogueSOs[dialogueIndex].dialogue);
     }
 }
