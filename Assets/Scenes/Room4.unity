@@ -379,6 +379,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2697880245815953813, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 857948816}
+    - targetCorrespondingSourceObject: {fileID: 2697880245815953813, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 857948817}
     - targetCorrespondingSourceObject: {fileID: 3925354766567386850, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 336124219}
@@ -410,6 +413,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &336124220 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8244658055338078615, guid: 26be63f82b1443947b1e77ca6d6cdbbc, type: 3}
+  m_PrefabInstance: {fileID: 336124217}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857948814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793fed86552bfd4479f12761ab3bd266, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &367818151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6522,6 +6536,36 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &857948817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 857948814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 679f87183d389e2418af83d149374a2e, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 336124220}
+          m_TargetAssemblyTypeName: Minigame4, Assembly-CSharp
+          m_MethodName: StopMinigame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &862583559
 GameObject:
   m_ObjectHideFlags: 0
@@ -7253,6 +7297,10 @@ PlayableDirector:
     value: {fileID: 336124219}
   - key: {fileID: -995621424446875935, guid: 907f28247a11d69429384634d99f2b48, type: 2}
     value: {fileID: 1284418021}
+  - key: {fileID: 2307376366451452740, guid: 907f28247a11d69429384634d99f2b48, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 4500981225948809818, guid: 907f28247a11d69429384634d99f2b48, type: 2}
+    value: {fileID: 857948817}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1107552577

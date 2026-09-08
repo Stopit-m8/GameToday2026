@@ -534,6 +534,8 @@ PlayableDirector:
     value: {fileID: 2019064285}
   - key: {fileID: -346708363553600226, guid: 427318cb8b9f32345a1cc6d7fdae80f8, type: 2}
     value: {fileID: 1722726534}
+  - key: {fileID: 5625113117828045340, guid: 427318cb8b9f32345a1cc6d7fdae80f8, type: 2}
+    value: {fileID: 1722726535}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &533610545
@@ -10228,9 +10230,15 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6837061347992088972, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1722726535}
     - targetCorrespondingSourceObject: {fileID: 6728551136951343183, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1722726534}
+    - targetCorrespondingSourceObject: {fileID: 6728551136951343183, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1722726539}
   m_SourcePrefab: {fileID: 100100000, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
 --- !u!224 &1722726532 stripped
 RectTransform:
@@ -10264,6 +10272,80 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1722726535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235871448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 0}
+    - {fileID: 11400000, guid: 169b62f36b5680648bf26c096a22b938, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls: []
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1722726536}
+          m_TargetAssemblyTypeName: Minigame2, Assembly-CSharp
+          m_MethodName: StopMinigame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1722726536 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6158934080939690891, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+  m_PrefabInstance: {fileID: 1722726531}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235871448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72338793f27bd0247b4320ce602b0ad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1722726539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1722726533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 169b62f36b5680648bf26c096a22b938, type: 2}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1722726533}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: 
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1768654419
 GameObject:
   m_ObjectHideFlags: 0

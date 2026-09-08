@@ -8313,6 +8313,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2642680304459729956, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1188504532}
+    - targetCorrespondingSourceObject: {fileID: 2642680304459729956, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2029810890}
     - targetCorrespondingSourceObject: {fileID: 2515694200315597866, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 841205533}
@@ -10511,6 +10514,12 @@ PlayableDirector:
     value: {fileID: 1188504532}
   - key: {fileID: -5284047034816219699, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
     value: {fileID: 841205535}
+  - key: {fileID: -1467527895039895036, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -4950444482458563194, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
+    value: {fileID: 2029810890}
+  - key: {fileID: 186991677946438238, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
+    value: {fileID: 431284432}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1800790451
@@ -11206,6 +11215,50 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd96feb0d684628499fe620c1f27dcf2, type: 3}
+--- !u!114 &2029810889 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8784628961616702510, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+  m_PrefabInstance: {fileID: 841205530}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188504531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 916cc8b12789f734887db9bd809ad9c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2029810890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1188504531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e52de21a22b6dd44c9cc19f810c65059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Events:
+    m_Signals:
+    - {fileID: 11400000, guid: 9049ffd22f5dffb49963a5fff08f3b43, type: 2}
+    - {fileID: 0}
+    m_Events:
+    - m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2029810889}
+          m_TargetAssemblyTypeName: Minigame3, Assembly-CSharp
+          m_MethodName: StopMinigame
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    - m_PersistentCalls:
+        m_Calls: []
 --- !u!213 &2039650798
 Sprite:
   m_ObjectHideFlags: 0
