@@ -18,12 +18,17 @@ public class CutSceneManager : MonoBehaviour
     {
         if (key == keyCountToStart)
         {
-            //OnAllKeysCollected?.Invoke();
+            DialogueManager.instance.OnDialogueEnd += Invoke;
         }
         else
         {
             PlayDialogue(key-1);
         }
+    }
+
+    private void Invoke()
+    {
+        OnAllKeysCollected?.Invoke();
     }
 
     private void PlayDialogue(int dialogueIndex)

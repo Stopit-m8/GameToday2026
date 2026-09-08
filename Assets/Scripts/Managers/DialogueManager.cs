@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -23,6 +24,8 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float normalTypeSpeed;
     [SerializeField] private float fastTypeSpeed;
     [SerializeField] private PlayerInput playerInput;
+
+    public event Action OnDialogueEnd;
 
     private void Awake()
     {
@@ -145,6 +148,7 @@ public class DialogueManager : MonoBehaviour
         {
             TransitionManager.instance.LoadScene(sceneName);
         }
+        OnDialogueEnd?.Invoke();
         Debug.Log("End of conv");
     }
 }

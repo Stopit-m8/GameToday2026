@@ -17615,8 +17615,44 @@ PrefabInstance:
       value: UnderwaterPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0170598
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.80517817
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.0000000021112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.017710032
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1702583038415996418, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2147366502580881081, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517775815676648716, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Size.x
+      value: 2.0173082
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517775815676648716, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Size.y
+      value: 2.4043941
+      objectReference: {fileID: 0}
+    - target: {fileID: 6517775815676648716, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.015264988
       objectReference: {fileID: 0}
     - target: {fileID: 7217836901552475205, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: pause
@@ -46110,9 +46146,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
+  m_Offset: {x: -0.0000000015690027, y: -0.0131617505}
+  m_Size: {x: 2.0000005, y: 0.65754336}
+  m_Direction: 1
 --- !u!114 &1978574813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46146,6 +46182,7 @@ GameObject:
   - component: {fileID: 2141332467}
   - component: {fileID: 2141332469}
   - component: {fileID: 2141332468}
+  - component: {fileID: 2141332470}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -46161,13 +46198,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2141332466}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1978574810}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!95 &2141332468
 Animator:
   serializedVersion: 7
@@ -46245,6 +46282,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2141332470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2141332466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1691aa6c0585c4a9a1034d597f00fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1385184061027714188
 PrefabInstance:
   m_ObjectHideFlags: 0
