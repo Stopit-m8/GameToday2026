@@ -9,8 +9,11 @@ public class MinigameManager : MonoBehaviour
     private CanvasGroup minigamePanel;
     [SerializeField] private GameObject minigameObject;
     [SerializeField] private PlayerInput playerInput;
-    [SerializeField] private GameObject maskPrefab;
+    
     [SerializeField] private Transform spawnPoint;
+
+    [SerializeField] private GameObject maskPrefab;
+    [SerializeField] private Sprite maskSprite;
 
     private void Awake()
     {
@@ -42,7 +45,8 @@ public class MinigameManager : MonoBehaviour
     public void FinishMinigame()
     {
         playerInput.actions.FindActionMap("Player").Enable();
-        Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
+        GameObject obj = Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
+        obj.GetComponent<SpriteRenderer>().sprite = maskSprite;
         ClosePanel(minigamePanel);
     }
 

@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 532877248532749888, guid: 8ad2df10757bd1143aed84906aa27022, type: 3}
   cuttedSprite: {fileID: 5939551836599360333, guid: 7aee0881569dccc40b265297b9d6eb7a, type: 3}
-  crackedSprite: {fileID: 0}
+  crackedSprite: {fileID: 21300000, guid: 42e7a4843c7c7e349abf175a89695fdf, type: 3}
   moldType: 0
