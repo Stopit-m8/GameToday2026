@@ -18,7 +18,7 @@ public class CutSceneManager : MonoBehaviour
     {
         if (key == keyCountToStart)
         {
-            OnAllKeysCollected?.Invoke();
+            //OnAllKeysCollected?.Invoke();
         }
         else
         {

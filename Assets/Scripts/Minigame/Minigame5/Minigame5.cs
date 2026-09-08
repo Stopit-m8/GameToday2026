@@ -12,7 +12,7 @@ public class Minigame5 : MonoBehaviour, IMinigame
 
     public void StartMinigame()
     {
-        throw new System.NotImplementedException();
+       MinigameManager.instance.OpenMinigame();
     }
 
     public void StopMinigame()
