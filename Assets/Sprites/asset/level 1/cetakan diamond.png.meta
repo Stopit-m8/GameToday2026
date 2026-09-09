@@ -116,12 +116,12 @@ TextureImporter:
       name: cetakan diamond_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 8
-        width: 48
-        height: 48
+        x: 4
+        y: 6
+        width: 60
+        height: 57
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 41dc1388413e31b4fb34f890465cf65c
     internalID: 0
     vertices: []
     indices: 
