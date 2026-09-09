@@ -2,24 +2,28 @@ using UnityEngine;
 
 public class Minigame5 : MonoBehaviour, IMinigame
 {
-    private CutSceneManager cutSceneManager;
-
-    private void Awake()
-    {
-        cutSceneManager = FindFirstObjectByType<CutSceneManager>();
-        cutSceneManager.OnAllKeysCollected += StartMinigame;
-    }
-
+    [SerializeField] private DragNDrop dragNDrop;
+    private int currSnap;
+    private int currSnapMax = 4;
     public void StartMinigame()
     {
-       MinigameManager.instance.OpenMinigame();
+        dragNDrop.OnImageSnap += CountSnap;
     }
 
     public void StopMinigame()
     {
-        cutSceneManager.OnAllKeysCollected -= StartMinigame;
+        dragNDrop.OnImageSnap -= CountSnap;
+        TransitionManager.instance.LoadScene("EndingIlustrasiScene");
     }
 
+    private void CountSnap()
+    {
+        currSnap++;
+        if (currSnap+1 >= currSnapMax)
+        {
+            StopMinigame();
+        }
+    }
     
 
     

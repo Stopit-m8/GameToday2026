@@ -20,19 +20,18 @@ public class CutSceneManager : MonoBehaviour
         {
             DialogueManager.instance.OnDialogueEnd += Invoke;
         }
-        else
-        {
             PlayDialogue(key-1);
-        }
     }
 
     private void Invoke()
     {
+        Debug.Log("toni gay");
         OnAllKeysCollected?.Invoke();
     }
 
     private void PlayDialogue(int dialogueIndex)
     {
+        Debug.Log($"this is dialogue {dialogueIndex}");
         DialogueManager.instance.StartDialogue(dialogueSOs[dialogueIndex].dialogue);
     }
 }

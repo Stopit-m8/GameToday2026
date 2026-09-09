@@ -1,12 +1,15 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class MinigameManager : MonoBehaviour
 {
     public static MinigameManager instance;
     private IMinigame minigame;
     private CanvasGroup minigamePanel;
+    private CutSceneManager cutSceneManager;
+
     [SerializeField] private GameObject minigameObject;
     [SerializeField] private PlayerInput playerInput;
     
@@ -20,6 +23,33 @@ public class MinigameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+        }
+        
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Scene loaded: " + scene.name);
+
+        if (scene.buildIndex == 6)
+        {
+            cutSceneManager = FindFirstObjectByType<CutSceneManager>();
+
+            if (cutSceneManager != null)
+            {
+                cutSceneManager.OnAllKeysCollected += OpenMinigame;
+                Debug.Log($"cutsceneManager{cutSceneManager}");
+            }
         }
     }
 
@@ -44,6 +74,10 @@ public class MinigameManager : MonoBehaviour
 
     public void FinishMinigame()
     {
+        if (cutSceneManager != null)
+        {
+            cutSceneManager.OnAllKeysCollected -= OpenMinigame;
+        }
         playerInput.actions.FindActionMap("Player").Enable();
         GameObject obj = Instantiate(maskPrefab, spawnPoint.transform.position, Quaternion.identity, spawnPoint.transform);
         obj.GetComponent<SpriteRenderer>().sprite = maskSprite;
