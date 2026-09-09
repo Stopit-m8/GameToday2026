@@ -14,46 +14,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Wait... what is this? Is this a memory?
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Oh yeah, this is my memory when I was a kid
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: God, how naive was I?
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Every time they asked for help, I gladly gave them everything.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: My parents taught me to be kind, so I thought that was enough.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: But the moment I was the one reaching out for help... they vanished.
         One by one, into the dark.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: I was left standing all alone. I couldn't even bring myself to tell
         my parents.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: 'That was the day I learned a cruel lesson: people only want you
         around if you''re useful. If you''re perfect..'
       onLeft: 0
+    changeScene: 0
+    sceneName: 

@@ -14,82 +14,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: This is today memory
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Years passed. My best friend and I made it to high school together.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: College was just around the corner, but a quiet terror started growing
         inside me.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: I felt hollow. I was living behind a mask with no real emotion left.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: But part of me was curious
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: I wanted to tell her the truth about who I really was.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: 'She was always like my parents: warm, supportive, always smiling.'
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: But what if she was just using me too?
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Would she still care about me if she saw how broken I actually am?
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: 'Every time she asked if I was okay, im just smile and said: ''I''m
         fine.'
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Maybe deep down, she knew I was lying. Maybe that's why she kept
         asking.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Then came the day of the university entrance results.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: She got accepted into her dream school right away.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: "She even teased me, saying I\u2019d definitely pass too because
         I was 'so smart' and that's why she loved being my friend."
       onLeft: 0
+    changeScene: 0
+    sceneName: 

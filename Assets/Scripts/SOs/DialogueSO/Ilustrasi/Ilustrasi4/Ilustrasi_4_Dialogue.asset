@@ -14,35 +14,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     dialogueLines:
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: And then, a notification popped up.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: I stared at the screen. "FAILED."
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: My entire world collapsed in an instant.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: She looked at my phone and said something... but her voice sounded
         underwater. I couldn't process a single word.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: The illusion of being perfect shattered into pieces.
       onLeft: 0
-    - name: Rana
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+    - name: Nara
+      background: {fileID: 0}
       sentence: Right then and there, I sat in total silence, trembling... having
         no idea how to face tomorrow.
       onLeft: 0
+    changeScene: 0
+    sceneName: 
