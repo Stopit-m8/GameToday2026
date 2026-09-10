@@ -20,6 +20,10 @@ public class PlayerAnimation : MonoBehaviour
         SpriteFlip();
     }
 
+    public void PlayFootstep()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.instance.Walk);
+    }
     private void SpriteFlip()
     {
         if (rb.linearVelocityX < -0.0001f && isLookingRight)

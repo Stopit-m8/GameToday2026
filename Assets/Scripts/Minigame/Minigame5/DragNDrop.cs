@@ -2,14 +2,13 @@ using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPointerUpHandler, IDropHandler
+public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IDropHandler
 {
-    public event Action OnImageSnap;
+    public event Action<DragNDrop> OnImageSnap;
     [SerializeField] private RectTransform endPoint;
     [SerializeField] private float snappingThreshold = 0.5f;
     private Vector2 distance;
     private RectTransform rectTransform;
-    private bool isDragging = false;
     private bool isSnapped = false;
 
     private void Awake()
@@ -31,13 +30,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        isDragging = true;
         distance = Camera.main.ScreenToWorldPoint(eventData.position) - transform.position;
-    }
-
-    public void OnPointerUp(PointerEventData eventData)
-    {
-        isDragging = false;
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -49,7 +42,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
             rectTransform.position = endPoint.position;
             Debug.Log("snapped");
             isSnapped = true;
-            OnImageSnap?.Invoke();
+            OnImageSnap?.Invoke(this);
         }
     }
 }

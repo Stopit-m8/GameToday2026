@@ -7,6 +7,11 @@ public class Pause : MonoBehaviour
     [SerializeField] private CanvasGroup settingPanel;
     private bool isPaused = false;
 
+    private void PlayButtonSFX()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.instance.Button);
+    }
+
     private void RevealPanel(CanvasGroup panel)
     {
         panel.alpha = 1.0f;
@@ -23,14 +28,18 @@ public class Pause : MonoBehaviour
 
     public void OpenClosePause()
     {
+        PlayButtonSFX();
+        
         if (!isPaused)
         {
+            Time.timeScale = 0f;
             RevealPanel(pausePanel);
             UnRevealPanel(settingPanel);
             isPaused = true;
         }
         else
         {
+            Time.timeScale = 1f;
             UnRevealPanel(pausePanel);
             UnRevealPanel(settingPanel);
             isPaused = false;
@@ -39,6 +48,7 @@ public class Pause : MonoBehaviour
 
     public void OpenCloseSetting()
     {
+        PlayButtonSFX();
         if (settingPanel.alpha != 1f)
         {
             RevealPanel(settingPanel);

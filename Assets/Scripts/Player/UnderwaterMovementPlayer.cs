@@ -12,7 +12,24 @@ public class UnderwaterMovementPlayer : MonoBehaviour, IMovement
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        DialogueManager.instance.Ondialogue += Stop;
+        //DialogueManager.instance.OnDialogueEnd += StartAgain;
     }
+
+    private void OnDisable()
+    {
+        DialogueManager.instance.Ondialogue -= Stop;
+    }
+
+    private void Stop()
+    {
+        rb.linearVelocity = Vector2.zero;
+    }
+
+    //private void StartAgain()
+    //{
+    //    currSpeed = speed;
+    //}
 
     public void Move(Vector2 dir)
     {

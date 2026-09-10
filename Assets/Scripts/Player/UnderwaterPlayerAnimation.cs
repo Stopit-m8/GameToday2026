@@ -16,7 +16,6 @@ public class UnderwaterPlayerAnimation : MonoBehaviour
 
     private void Update()
     {
-        animator.SetFloat("Velocity", Mathf.Abs(rb.linearVelocityX));
         SpriteFlip();
     }
 

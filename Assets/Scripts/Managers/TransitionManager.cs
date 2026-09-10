@@ -33,6 +33,7 @@ public class TransitionManager : MonoBehaviour
 
     IEnumerator StartLoadScene(int sceneIndex)
     {
+        Time.timeScale = 1f;
         if (!isTransitioning)
         {
             isTransitioning = true;

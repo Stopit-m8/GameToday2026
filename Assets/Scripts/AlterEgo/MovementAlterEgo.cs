@@ -6,6 +6,7 @@ public class MovementAlterEgo : MonoBehaviour
 {
     [SerializeField] private GameObject player;
     [SerializeField] private float speed = 1;
+    private float currSpeed;
     private bool isStunned = false;
 
     private Rigidbody2D rb;
@@ -14,8 +15,27 @@ public class MovementAlterEgo : MonoBehaviour
 
     private void Awake()
     {
+        currSpeed = speed;
         rb = GetComponent<Rigidbody2D>();
         monologueAlterEgo = GetComponent<MonologueAlterEgo>();
+        DialogueManager.instance.Ondialogue += Stop;
+        DialogueManager.instance.OnDialogueEnd += StartAgain;
+    }
+
+    private void OnDisable()
+    {
+        DialogueManager.instance.Ondialogue -= Stop;
+        DialogueManager.instance.OnDialogueEnd -= StartAgain;
+    }
+
+    private void Stop()
+    {
+        currSpeed = 0;
+    }
+
+    private void StartAgain()
+    {
+        currSpeed = speed;
     }
 
     public void Stun(float stunTime)
@@ -40,7 +60,7 @@ public class MovementAlterEgo : MonoBehaviour
     {
         if (!isStunned)
         {
-            rb.linearVelocity = new Vector2(dir.normalized.x * speed, dir.normalized.y * speed);
+            rb.linearVelocity = new Vector2(dir.normalized.x * currSpeed, dir.normalized.y * currSpeed);
         }
         else
         {

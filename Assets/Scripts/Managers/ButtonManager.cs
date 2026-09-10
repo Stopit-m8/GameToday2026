@@ -6,19 +6,28 @@ public class ButtonManager : MonoBehaviour
     [SerializeField] private CanvasGroup mainMenuPanel;
     [SerializeField] private CanvasGroup settingPanel;
     [SerializeField] private CanvasGroup creditPanel;
+
+    private void PlayButtonSFX()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.instance.Button);
+    }
+
     public void PlayGame()
     {
         Debug.Log("Play game");
+        PlayButtonSFX();
         TransitionManager.instance.LoadScene(1);
     }
 
     public void ExitGame()
     {
+        PlayButtonSFX();
         Application.Quit();
     }
 
     public void OpenCloseSettings()
     {
+        PlayButtonSFX();
         if (settingPanel.alpha == 1f)
         {
             ClosePanel(settingPanel);
@@ -33,6 +42,7 @@ public class ButtonManager : MonoBehaviour
 
     public void OpenCloseCredit()
     {
+        PlayButtonSFX();
         if (creditPanel.alpha == 1f)
         {
             ClosePanel(creditPanel);

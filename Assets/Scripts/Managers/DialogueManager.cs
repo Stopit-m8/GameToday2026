@@ -9,6 +9,9 @@ using UnityEngine.UI;
 public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager instance;
+    public event Action Ondialogue;
+    public event Action OnDialogueEnd;
+
     private Queue<DialogueLines> sentences;
     private Image backGroundImage;
     private CanvasGroup backGroundCanvasGroup;
@@ -25,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float fastTypeSpeed;
     [SerializeField] private PlayerInput playerInput;
 
-    public event Action OnDialogueEnd;
+    
 
     private void Awake()
     {
@@ -65,6 +68,7 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(dialogueLines);
         }
+        Ondialogue?.Invoke();
         DisplayNextSentence();
     }
 
