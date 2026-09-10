@@ -15,37 +15,37 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: Wait... what is this? Is this a memory?
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: Oh yeah, this is my memory when I was a kid
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: God, how naive was I?
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: Every time they asked for help, I gladly gave them everything.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: My parents taught me to be kind, so I thought that was enough.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: But the moment I was the one reaching out for help... they vanished.
         One by one, into the dark.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: I was left standing all alone. I couldn't even bring myself to tell
         my parents.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: -748972414704413334, guid: fe1c72d729f6d364589caa6a2c031607, type: 3}
       sentence: 'That was the day I learned a cruel lesson: people only want you
         around if you''re useful. If you''re perfect..'
       onLeft: 0
