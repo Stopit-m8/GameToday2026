@@ -14,6 +14,11 @@ public class UnderwaterPlayerAnimation : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    public void PlaySwimSound()
+    {
+        AudioManager.instance.PlaySFX(AudioManager.instance.Swim);
+    }
+
     private void Update()
     {
         SpriteFlip();

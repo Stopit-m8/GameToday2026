@@ -12,13 +12,19 @@ public class UnderwaterMovementPlayer : MonoBehaviour, IMovement
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        DialogueManager.instance.Ondialogue += Stop;
+        
         //DialogueManager.instance.OnDialogueEnd += StartAgain;
+    }
+
+    private void Start()
+    {
+        DialogueManager.instance.Ondialogue += Stop;
     }
 
     private void OnDisable()
     {
         DialogueManager.instance.Ondialogue -= Stop;
+        //DialogueManager.instance.OnDialogueEnd -= StartAgain;
     }
 
     private void Stop()
