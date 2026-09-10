@@ -15,28 +15,28 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: And then, a notification popped up.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: I stared at the screen. "FAILED."
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: My entire world collapsed in an instant.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: She looked at my phone and said something... but her voice sounded
         underwater. I couldn't process a single word.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: The illusion of being perfect shattered into pieces.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Right then and there, I sat in total silence, trembling... having
         no idea how to face tomorrow.
       onLeft: 0

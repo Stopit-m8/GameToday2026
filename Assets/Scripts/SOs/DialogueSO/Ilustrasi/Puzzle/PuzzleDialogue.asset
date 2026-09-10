@@ -15,91 +15,76 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Is this... my heart?
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: But I'm already too late
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: "I\u2019ve hidden behind this mask for so long."
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: "What\u2019s the point of having a heart if I don't even use it to
         feel?"
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Wait... is that my parents' voice?
       onLeft: 0
     - name: Parents
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Nara, why do you like helping others? Is it because it genuinely
         brings you joy... or because you feel forced to do it?
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: We never wanted you to force your kindness. We just want you to be
         yourself.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Success or failure, Nara... we will always love you no matter what.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Her Best Friend
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: NARA!! NARA!! WAKE UP!!
       onLeft: 0
     - name: Her Best Friend
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Please, don't give up on me!
       onLeft: 0
     - name: Her Best Friend
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: It's okay if you failed this one! There are so many other universities
         out there!
       onLeft: 0
     - name: Her Best Friend
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: There's always another way!
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: I think... I finally understand.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Thank you
       onLeft: 0
+    changeScene: 0
+    sceneName: EndingScene

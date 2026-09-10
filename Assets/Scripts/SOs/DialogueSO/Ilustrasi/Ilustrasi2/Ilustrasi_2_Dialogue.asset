@@ -15,47 +15,47 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Ahh, my first arrive in junior high school
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: This time I forced myself to become the friendliest person in the
         room.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: Always smiling, always helpful. But more importantly, I swore never
         to ask for help again. I buried my pain deep down so no one could ever see
         my flaws.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: And the sick joke? It worked.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: In just a week, I was surrounded by people. I even made a best friend.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: But deep down, I knew it was all built on a fragile glass mask.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: I didn't even dare to trust her fully... because I believed the second
         I broke, everyone would leave again.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: ...
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: I stopped helping people out of genuine kindness. It became a transaction.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 7154074579846293710, guid: 4ebdfa482668674498b9cbb577bd6224, type: 3}
       sentence: "I needed to be perfect. No matter what it took\u2014my heart, my
         empathy, my true self... I threw it all away."
       onLeft: 0
