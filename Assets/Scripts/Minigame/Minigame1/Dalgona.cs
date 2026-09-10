@@ -58,6 +58,7 @@ public class Dalgona : MonoBehaviour
         moldObject.GetComponent<Image>().DOFade(1f, 0.3f);
         
         moldObject.transform.DOMove(transform.position, fadeTime/4);
+        AudioManager.instance.PlaySFX(AudioManager.instance.CookiePan);
         yield return new WaitForSeconds(fadeTime/4);
         if (!mcDalgonaActive)
         {
@@ -70,6 +71,7 @@ public class Dalgona : MonoBehaviour
             {
 
                 moldObject.transform.DOShakePosition(1f, 10f);
+                AudioManager.instance.PlaySFX(AudioManager.instance.Crunch);
                 ChangeAppearenceCracked();
                 Debug.Log("Dalgona breaks");
             }
@@ -87,6 +89,7 @@ public class Dalgona : MonoBehaviour
             {
                 moldObject.transform.DOShakePosition(1f, 10f);
                 Debug.Log("Dalgona breaks");
+                AudioManager.instance.PlaySFX(AudioManager.instance.Crunch);
                 currMCDalgona++;
                 image.sprite = mcMolds[currMCDalgona].sprite;
                 if (currMCDalgona >= mcMolds.Length - 1)

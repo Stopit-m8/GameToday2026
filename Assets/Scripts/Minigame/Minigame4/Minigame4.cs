@@ -103,6 +103,10 @@ public class Minigame4 : MonoBehaviour, IMinigame
         maskClicked++;
         hands.MoveHand(maskClicked, maskLimit);
         Debug.Log($"mask clicked = {maskClicked}");
+        if (maskClicked == maskLimit/2)
+        {
+            AudioManager.instance.PlaySFX(AudioManager.instance.Mask);
+        }
         if (maskClicked >= maskLimit)
         {
             StopAllCoroutines();

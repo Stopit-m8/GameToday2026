@@ -20,12 +20,14 @@ public class MovementAlterEgo : MonoBehaviour
         monologueAlterEgo = GetComponent<MonologueAlterEgo>();
         DialogueManager.instance.Ondialogue += Stop;
         DialogueManager.instance.OnDialogueEnd += StartAgain;
+        MinigameManager.instance.OnMinigameOpen += Stop;
     }
 
     private void OnDisable()
     {
         DialogueManager.instance.Ondialogue -= Stop;
         DialogueManager.instance.OnDialogueEnd -= StartAgain;
+        MinigameManager.instance.OnMinigameOpen -= Stop;
     }
 
     private void Stop()

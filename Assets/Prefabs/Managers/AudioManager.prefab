@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 320586853745487383}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.2947164, y: 0.3885836, z: 0.037475843}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -51,18 +51,23 @@ MonoBehaviour:
   CutsceneEnding: {fileID: 8300000, guid: 9b8774b3d6905a64a9298d0aca185cf3, type: 3}
   CutsceneAwal: {fileID: 8300000, guid: 33710a5f6c064bb46aaf24b4f729ef69, type: 3}
   GameplayAkhir: {fileID: 8300000, guid: 3bd299f7f01628844b327877111ed1b4, type: 3}
-  GameplayAwal: {fileID: 8300000, guid: 66080bdb0e776984f885e25e4892b853, type: 3}
+  Gameplay13: {fileID: 8300000, guid: 594ed198b002c5345ad92b3dbef037c5, type: 3}
+  Gameplay4: {fileID: 8300000, guid: 4d42b3bc0af44c248afe2bfaf5616ae5, type: 3}
   MainMenu: {fileID: 8300000, guid: 9fb85a7f21dff4a4096e30f441acf633, type: 3}
-  BeetleWalk: {fileID: 8300000, guid: f42e30523cd39aa44bb54f353c44850c, type: 3}
-  Button: {fileID: 8300000, guid: 782d621465e653540b0cfe4321327e7a, type: 3}
+  BeetleWalk: {fileID: 8300000, guid: e55410bbd8b3ff64494e4d7e967f80c3, type: 3}
+  Button: {fileID: 8300000, guid: 5f5a01f32f838244baf500e616507bc4, type: 3}
   CookiePan: {fileID: 8300000, guid: 35ec2714a50059e42a9dac99263cf53b, type: 3}
-  DialogueBeep: {fileID: 8300000, guid: 455f08e29b02e4d4cbda989681e34c82, type: 3}
+  DialogueBeep: {fileID: 8300000, guid: 998d5ea77e914874c96dbf8be01b79b1, type: 3}
   Mask: {fileID: 8300000, guid: 393d8abcd90da704eaf29b2333654b1e, type: 3}
-  Panel: {fileID: 8300000, guid: aca2d70d952427941a4af95de82c5dba, type: 3}
+  Panel: {fileID: 8300000, guid: 4445dba7869dc0d47b8635c610091bc7, type: 3}
   PlacePuzzle: {fileID: 8300000, guid: 6fc66bc9ec643384cb5f4acac043c6d9, type: 3}
   Scream: {fileID: 8300000, guid: 1493ef1ab4619b74ab4271fbf0ff15f7, type: 3}
-  Swim: {fileID: 8300000, guid: 1a3b620f355b889408d14fa2badc8e51, type: 3}
+  Swim: {fileID: 8300000, guid: ba529e3c14f172845937b8981379646b, type: 3}
   Walk: {fileID: 8300000, guid: 40329354484f8b4478ac3ec15ef5f678, type: 3}
+  Crunch: {fileID: 8300000, guid: 40a6d99f1c4e613469903f949ff05101, type: 3}
+  Horse: {fileID: 8300000, guid: 86dafcf183be0fe41a993f081e856556, type: 3}
+  Pop: {fileID: 8300000, guid: 70d79d7d9cb3f3d4e8642a490062bcba, type: 3}
+  Whip: {fileID: 8300000, guid: 3c09ca49a9c39a64a90e7f755b1f4ef4, type: 3}
 --- !u!1 &631837135063800770
 GameObject:
   m_ObjectHideFlags: 0

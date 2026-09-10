@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip CutsceneEnding;
     public AudioClip CutsceneAwal;
     public AudioClip GameplayAkhir;
-    public AudioClip GameplayAwal;
+    public AudioClip Gameplay13;
+    public AudioClip Gameplay4;
     public AudioClip MainMenu;
 
     [Header("Audio Clip SFX")]
@@ -25,6 +27,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip Scream;
     public AudioClip Swim;
     public AudioClip Walk;
+    public AudioClip Crunch;
+    public AudioClip Horse;
+    public AudioClip Pop;
+    public AudioClip Whip;
 
 
     private void Awake()
@@ -46,6 +52,11 @@ public class AudioManager : MonoBehaviour
         musicSource.Play();
     }
 
+    public void StopSFX()
+    {
+        sfxSource.Stop();
+    }
+
     public void PlaySFX(AudioClip sfx)
     {
         sfxSource.PlayOneShot(sfx);
@@ -61,4 +72,55 @@ public class AudioManager : MonoBehaviour
         sfxSource.UnPause();
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Scene loaded: " + scene.name);
+
+        if (scene.buildIndex == 0)
+        {
+            musicSource.Stop();
+            musicSource.clip = MainMenu;
+            musicSource.Play();
+        }
+        if (scene.buildIndex == 1)
+        {
+            musicSource.Stop();
+            musicSource.clip = CutsceneAwal;
+            musicSource.Play();
+        }
+        if (scene.buildIndex == 2)
+        {
+            musicSource.Stop();
+            musicSource.clip = Gameplay13;
+            musicSource.Play();
+        }
+        if (scene.buildIndex == 5)
+        {
+            musicSource.Stop();
+            musicSource.clip = Gameplay4;
+            musicSource.Play();
+        }
+        if (scene.buildIndex == 6)
+        {
+            musicSource.Stop();
+            musicSource.clip = GameplayAkhir;
+            musicSource.Play();
+        }
+        if (scene.buildIndex == 7)
+        {
+            musicSource.Stop();
+            musicSource.clip = CutsceneEnding;
+            musicSource.Play();
+        }
+    }
 }

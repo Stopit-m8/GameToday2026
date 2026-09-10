@@ -118,6 +118,11 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i <= dialogueLine.sentence.Length; i++)
         {
             textArea.maxVisibleCharacters = i;
+            if (typeSpeed == normalTypeSpeed)
+            {
+                AudioManager.instance.PlaySFX(AudioManager.instance.DialogueBeep);
+            }
+            
             yield return new WaitForSeconds(typeSpeed);
         }
         isTyping = false;

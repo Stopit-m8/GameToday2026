@@ -40,6 +40,7 @@ public class DragNDrop : MonoBehaviour, IPointerDownHandler, IDragHandler, IDrop
         if (distanceToEndPoint < snappingThreshold)
         {
             rectTransform.position = endPoint.position;
+            AudioManager.instance.PlaySFX(AudioManager.instance.PlacePuzzle);
             Debug.Log("snapped");
             isSnapped = true;
             OnImageSnap?.Invoke(this);

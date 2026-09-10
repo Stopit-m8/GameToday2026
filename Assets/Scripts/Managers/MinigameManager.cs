@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -5,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class MinigameManager : MonoBehaviour
 {
+    public event Action OnMinigameOpen;
     public static MinigameManager instance;
     private IMinigame minigame;
     private CanvasGroup minigamePanel;
@@ -66,6 +68,8 @@ public class MinigameManager : MonoBehaviour
 
     IEnumerator OpenMinigameCoroutine()
     {
+        OnMinigameOpen?.Invoke();
+        AudioManager.instance.PlaySFX(AudioManager.instance.Panel);
         OpenPanel(minigamePanel);
         minigame.StartMinigame();
         yield return null;

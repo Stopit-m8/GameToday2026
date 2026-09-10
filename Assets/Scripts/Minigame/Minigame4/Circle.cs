@@ -22,6 +22,7 @@ public class Circle : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         OnCircleClicked?.Invoke(this);
+        AudioManager.instance.PlaySFX(AudioManager.instance.Pop);
         StopCoroutine(ShowCircleCoroutine());
         gameObject.SetActive(false);
 

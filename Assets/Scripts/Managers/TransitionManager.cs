@@ -33,6 +33,7 @@ public class TransitionManager : MonoBehaviour
 
     IEnumerator StartLoadScene(int sceneIndex)
     {
+        AudioManager.instance.StopSFX();
         Time.timeScale = 1f;
         if (!isTransitioning)
         {

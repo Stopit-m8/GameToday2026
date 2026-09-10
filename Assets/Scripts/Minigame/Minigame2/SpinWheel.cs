@@ -6,6 +6,9 @@ public class SpinWheel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     [SerializeField] private RectTransform wheel;
     [SerializeField] private BugClimb bugClimb;
 
+    [SerializeField] private float soundInterval = 0.4f;
+    private float soundTime = 0f;
+
     private bool isDragging;
     private float previousAngle;
 
@@ -18,6 +21,7 @@ public class SpinWheel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
     {
         isDragging = true;
         previousAngle = GetMouseAngle(eventData);
+        soundTime = 0f;
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -31,6 +35,12 @@ public class SpinWheel : MonoBehaviour, IPointerDownHandler, IDragHandler, IPoin
             
             float spinAmount = Mathf.Abs(angleDifference);
             bugClimb.AddProgress(spinAmount);
+            soundTime += Time.deltaTime;
+            if (soundTime > soundInterval)
+            {
+                AudioManager.instance.PlaySFX(AudioManager.instance.BeetleWalk);
+                soundTime = 0f;
+            }
         }
 
         previousAngle = currentAngle;

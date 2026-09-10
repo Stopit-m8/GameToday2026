@@ -83,6 +83,7 @@ public class Minigame3 : MonoBehaviour, IMinigame
         }
         if(spankNow)
         {
+            AudioManager.instance.PlaySFX(AudioManager.instance.Horse);
             progressSlider.value += addedProgress;
             ShowNotification(false);
             spawnTimer = 0;

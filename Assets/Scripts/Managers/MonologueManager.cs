@@ -69,7 +69,7 @@ public class MonologueManager : MonoBehaviour
     {
         MonologueLine sentence = sentences.Dequeue();
         StartCoroutine(TypeSentence(sentence));
-        yield return new WaitForSeconds(showTime);
+        yield return new WaitForSeconds((typeSpeed * sentence.sentence.Length) + showTime);
         DisplayNextSentence();
     }
 

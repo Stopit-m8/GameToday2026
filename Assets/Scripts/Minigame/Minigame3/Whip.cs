@@ -48,6 +48,7 @@ public class Whip : MonoBehaviour
     IEnumerator SpankHorseCoroutine()
     {
         SetCustomImage(spank);
+        AudioManager.instance.PlaySFX(AudioManager.instance.Whip);
         yield return new WaitForSeconds(spankTime);
         SetCustomImage(normal);
     }
