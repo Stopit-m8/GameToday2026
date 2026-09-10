@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 741895ff102ea7e418787667310232de, type: 3}
-  m_Name: Level1.1Monologue
+  m_Name: Level1.3Monologue
   m_EditorClassIdentifier: 
   monologue:
     monologueLines:
-    - sentence: Maybe I need to keep moving forward...
+    - sentence: Wait... what is that?

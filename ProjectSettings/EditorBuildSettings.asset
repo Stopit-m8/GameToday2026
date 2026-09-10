@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Underwater.unity
     guid: 716545e835675964e96f6968a578c1f3
+  - enabled: 1
+    path: Assets/Scenes/EndingIlustrasiScene.unity
+    guid: c170e9f5b01289f4dbf93522d4b792d1
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 994dec838c4ca44428054872325bddd0
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
