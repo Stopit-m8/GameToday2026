@@ -21,7 +21,7 @@ public class BugClimb : MonoBehaviour
 
     public void AddProgress(float spinAmount)
     {
-        AudioManager.instance.PlaySFX(AudioManager.instance.BeetleWalk);
+        //AudioManager.instance.PlaySFX(AudioManager.instance.BeetleWalk);
         TurnBall(spinAmount);
         progress += spinAmount * progressMultiplier;
         progress = Mathf.Clamp01(progress);

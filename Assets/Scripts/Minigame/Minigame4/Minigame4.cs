@@ -44,6 +44,7 @@ public class Minigame4 : MonoBehaviour, IMinigame
         StopAllCoroutines();
         minigameIsActive = false;
         MinigameManager.instance.FinishMinigame();
+        TransitionManager.instance.LoadScene("Underwater");
     }
 
     private void Initialize()
