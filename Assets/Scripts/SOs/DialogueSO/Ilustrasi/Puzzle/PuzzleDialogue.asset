@@ -15,76 +15,97 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Is this... my heart?
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: But I'm already too late
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: "I\u2019ve hidden behind this mask for so long."
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: "What\u2019s the point of having a heart if I don't even use it to
         feel?"
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: ...
       onLeft: 0
+    - name: Parents
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: Nara, come here, my sweet angel.
+      onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Wait... is that my parents' voice?
       onLeft: 0
     - name: Parents
-      background: {fileID: 0}
-      sentence: Nara, why do you like helping others? Is it because it genuinely
-        brings you joy... or because you feel forced to do it?
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: Nara, why do you like helping others?
       onLeft: 0
-    - name: Nara
-      background: {fileID: 0}
+    - name: Parents
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: Is it because it genuinely brings you joy... or because you feel
+        forced to do it?
+      onLeft: 0
+    - name: Parents
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: We never wanted you to force your kindness. We just want you to be
         yourself.
       onLeft: 0
-    - name: Nara
-      background: {fileID: 0}
+    - name: Parents
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Success or failure, Nara... we will always love you no matter what.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: ...
       onLeft: 0
-    - name: Her Best Friend
-      background: {fileID: 0}
+    - name: Rina
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: NARA!! NARA!! WAKE UP!!
       onLeft: 0
-    - name: Her Best Friend
-      background: {fileID: 0}
+    - name: Rina
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Please, don't give up on me!
       onLeft: 0
-    - name: Her Best Friend
-      background: {fileID: 0}
+    - name: Rina
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: It's okay if you failed this one! There are so many other universities
         out there!
       onLeft: 0
-    - name: Her Best Friend
-      background: {fileID: 0}
+    - name: Rina
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: There's always another way!
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: ...
       onLeft: 0
+    - name: Echo
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: So, Nara...
+      onLeft: 0
+    - name: Echo
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: Now do you understand the meaning of life?
+      onLeft: 0
+    - name: Echo
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
+      sentence: Don't tell yourself that this is the end. You must keep going even
+        if you fail. Don't let a little failure destroy you.
+      onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: I think... I finally understand.
       onLeft: 0
     - name: Nara
-      background: {fileID: 0}
+      background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Thank you
       onLeft: 0
-    changeScene: 0
+    changeScene: 1
     sceneName: EndingScene

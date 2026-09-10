@@ -66,13 +66,13 @@ MonoBehaviour:
       background: {fileID: 0}
       sentence: ...
       onLeft: 0
+    - name: Nara
+      background: {fileID: 0}
+      sentence: There's... something I really need to tell you.
+      onLeft: 0
     - name: Rina
       background: {fileID: 0}
       sentence: Yeah?
-      onLeft: 0
-    - name: Nara
-      background: {fileID: 0}
-      sentence: There's... something I really need to tell you
       onLeft: 0
     - name: Phone
       background: {fileID: 0}

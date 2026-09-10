@@ -934,6 +934,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 941843904511379880, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 941843904511379880, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 941843904511379880, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 941843904511379880, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154683513709625576, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1663223338428458975, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1014,9 +1034,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1766376518784753432, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_Alpha
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834484682149292980, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834484682149292980, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1834484682149292980, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2116298151101787351, guid: 9a95637ef29e825469f68d360417f7fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -24.630005
+      value: -24.629944
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

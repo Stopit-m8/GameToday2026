@@ -8359,7 +8359,7 @@ PrefabInstance:
       objectReference: {fileID: 1800790450}
     - target: {fileID: 8784628961616702510, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: maxSpawnTime
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8784628961616702510, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: minSpawnTime
@@ -8371,7 +8371,7 @@ PrefabInstance:
       objectReference: {fileID: 431284434}
     - target: {fileID: 8784628961616702510, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
       propertyPath: addedProgress
-      value: 5
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10794,7 +10794,7 @@ Transform:
   m_GameObject: {fileID: 1803477476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5096335, y: -0.51, z: -10}
+  m_LocalPosition: {x: -5.515844, y: -0.51, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
