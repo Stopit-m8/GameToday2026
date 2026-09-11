@@ -18,6 +18,11 @@ public class MovementAlterEgo : MonoBehaviour
         currSpeed = speed;
         rb = GetComponent<Rigidbody2D>();
         monologueAlterEgo = GetComponent<MonologueAlterEgo>();
+        
+    }
+
+    private void OnEnable()
+    {
         DialogueManager.instance.Ondialogue += Stop;
         DialogueManager.instance.OnDialogueEnd += StartAgain;
         MinigameManager.instance.OnMinigameOpen += Stop;
