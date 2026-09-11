@@ -40,9 +40,9 @@ public class StunAlterEgo : MonoBehaviour
         {
             
             AudioManager.instance.PlaySFX(AudioManager.instance.Scream);
-            var blink = collision.gameObject.GetComponentInChildren<SpriteBlinking>();
-            Debug.Log($"blink = {blink}");
-            blink.Blink();
+            //var blink = collision.gameObject.GetComponentInChildren<SpriteBlinking>();
+            //Debug.Log($"blink = {blink}");
+            //blink.Blink();
             Stun(collision.GetComponent<UnderwaterMovementPlayer>());
         }
     }
