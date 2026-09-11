@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class StunAlterEgo : MonoBehaviour
@@ -9,10 +10,12 @@ public class StunAlterEgo : MonoBehaviour
     [SerializeField] private Transform[] TeleportPoint;
     [SerializeField] private CanvasGroup jumpscarePanel;
     private MovementAlterEgo movement;
+    private CinemachineImpulseSource impulseSource;
 
     private void Awake()
     {
         movement = GetComponent<MovementAlterEgo>();
+        impulseSource = GetComponent<CinemachineImpulseSource>();
     }
 
     private void Stun(UnderwaterMovementPlayer player)
@@ -22,6 +25,7 @@ public class StunAlterEgo : MonoBehaviour
 
     IEnumerator StunCoroutine(UnderwaterMovementPlayer player)
     {
+        impulseSource.GenerateImpulse();
         jumpscarePanel.alpha = 1f;
         player.GetStunned(stunTime);
         yield return new WaitForSeconds(jumpScareTime);
@@ -34,6 +38,7 @@ public class StunAlterEgo : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            
             AudioManager.instance.PlaySFX(AudioManager.instance.Scream);
             var blink = collision.gameObject.GetComponentInChildren<SpriteBlinking>();
             Debug.Log($"blink = {blink}");
