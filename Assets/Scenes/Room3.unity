@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &65380685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7001762200335373262, guid: 471fc043fa3d7374ebad4316fa0285df, type: 3}
+  m_PrefabInstance: {fileID: 841205530}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &175996975 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1303079900385720981, guid: 9a9f2d70cb14c0c43af07a8a7d74b3d2, type: 3}
@@ -10692,6 +10697,8 @@ PlayableDirector:
     value: {fileID: 2029810890}
   - key: {fileID: 186991677946438238, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
     value: {fileID: 431284432}
+  - key: {fileID: -5415716516483961257, guid: 1b7cfc9f4dd7df64c9acd8de36c025d2, type: 2}
+    value: {fileID: 65380685}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1800790451
