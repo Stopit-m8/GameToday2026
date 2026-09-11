@@ -17706,9 +17706,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: m_SortingOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1924539617211295153, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 151ac6784aad37c40a647440fd0b333a, type: 2}
     - target: {fileID: 2147366502580881081, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
       propertyPath: m_Constraints
       value: 4
@@ -17796,7 +17812,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6198147734622997712, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 957898453}
   m_SourcePrefab: {fileID: 100100000, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
 --- !u!225 &506789604 stripped
 CanvasGroup:
@@ -18907,6 +18926,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &957898451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6198147734622997712, guid: b08dbd129a0ded04fafe1db1cec956d0, type: 3}
+  m_PrefabInstance: {fileID: 506789603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &957898453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957898451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 151d622a92826f141bf031dda9113d89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BlinkDecaySpeed: 1
 --- !u!224 &990045073 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1546742973922703308, guid: 421eef1c8784e714b96e7626172a580b, type: 3}

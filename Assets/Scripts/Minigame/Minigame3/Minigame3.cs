@@ -12,10 +12,16 @@ public class Minigame3 : MonoBehaviour, IMinigame
     [SerializeField] private float minSpawnTime;
     [SerializeField] private float maxSpawnTime;
     [SerializeField] private PlayableDirector timeline;
+    private MonologueTrigger monologueTrigger;
     private bool timeStart = false;
     private float spawnTimer = 0;
     private bool spankNow = false;
     //private bool hasGlitch = false;
+
+    private void Start()
+    {
+        monologueTrigger = GetComponent<MonologueTrigger>();
+    }
 
     private void Update()
     {
@@ -102,6 +108,7 @@ public class Minigame3 : MonoBehaviour, IMinigame
         Cursor.visible = true;
         horse.OnHorseSpanked -= HorseSpanked;
         MinigameManager.instance.FinishMinigame();
+        monologueTrigger.TriggerMonologue();
         //hasGlitch = true;
         timeStart = false;
     }

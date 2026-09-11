@@ -10,10 +10,16 @@ public class Minigame1 : MonoBehaviour, IMinigame
     [SerializeField] private GameObject dalgonaPrefab;
     [SerializeField] private Transform dalgonaSpawnPoint;
     [SerializeField] private int maxSuccess;
+    private MonologueTrigger monologueTrigger;
     private GameObject currDalgona;
     private GameObject currMold;
     private int currSuccess = 0;
     private bool canPress = true;
+
+    private void Start()
+    {
+        monologueTrigger = GetComponent<MonologueTrigger>();
+    }
 
     public void StartMinigame()
     {
@@ -37,6 +43,8 @@ public class Minigame1 : MonoBehaviour, IMinigame
         currMold = null;
 
         MinigameManager.instance.FinishMinigame();
+
+        monologueTrigger.TriggerMonologue();
     }
 
     public void StopMinigame()

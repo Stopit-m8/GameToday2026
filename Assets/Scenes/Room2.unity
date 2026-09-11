@@ -10463,6 +10463,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6837061347992088972, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1722726535}
+    - targetCorrespondingSourceObject: {fileID: 6837061347992088972, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1722726537}
     - targetCorrespondingSourceObject: {fileID: 6728551136951343183, guid: 312d5d5e634032e469cb64a35bec0f9c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1722726534}
@@ -10546,6 +10549,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72338793f27bd0247b4320ce602b0ad3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1722726537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235871448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f58ec47be1629489f53101ebdb4f66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monologue: {fileID: 11400000, guid: 11f040c54f04fbd4a8505c69617b38df, type: 2}
 --- !u!114 &1722726539
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10800,7 +10816,7 @@ Transform:
   m_GameObject: {fileID: 1803477476}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5096364, y: -0.48, z: -10}
+  m_LocalPosition: {x: -5.51157, y: -0.48, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
