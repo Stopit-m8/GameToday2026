@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class OnAwakeTriggerDialogue : MonoBehaviour
@@ -12,6 +13,14 @@ public class OnAwakeTriggerDialogue : MonoBehaviour
     private void Start()
     {
 
+        StartCoroutine(StartCor());
+    }
+
+    IEnumerator StartCor()
+    {
+        yield return null;
+
         dialogueTrigger.TriggerDialogue();
     }
+    
 }

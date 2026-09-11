@@ -22,7 +22,7 @@ public class MovementAlterEgo : MonoBehaviour
         
     }
 
-    private void OnEnable()
+    private void Start()
     {
         DialogueManager.instance.Ondialogue += Stop;
         DialogueManager.instance.OnDialogueEnd += StartAgain;
