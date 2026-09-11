@@ -7,6 +7,7 @@ public class MovementAlterEgo : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private float speed = 1;
     private float currSpeed;
+    private bool canMove = true;
     private bool isStunned = false;
 
     private Rigidbody2D rb;
@@ -37,12 +38,14 @@ public class MovementAlterEgo : MonoBehaviour
 
     private void Stop()
     {
-        currSpeed = 0;
+        Debug.Log("stop");
+        canMove = false;
+        rb.linearVelocity = Vector2.zero;
     }
 
     private void StartAgain()
     {
-        currSpeed = speed;
+        canMove = true;
     }
 
     public void Stun(float stunTime)
@@ -65,16 +68,15 @@ public class MovementAlterEgo : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (!isStunned)
-        {
-            rb.linearVelocity = new Vector2(dir.normalized.x * currSpeed, dir.normalized.y * currSpeed);
-        }
-        else
+        if (!canMove || isStunned)
         {
             rb.linearVelocity = Vector2.zero;
-            Debug.Log("Is Stunned");
+            return;
         }
-        
-        
+
+        rb.linearVelocity = new Vector2(
+            dir.normalized.x * currSpeed,
+            dir.normalized.y * currSpeed
+        );
     }
 }
