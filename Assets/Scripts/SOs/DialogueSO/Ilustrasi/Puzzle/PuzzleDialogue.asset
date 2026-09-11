@@ -94,10 +94,9 @@ MonoBehaviour:
       background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
       sentence: Now do you understand the meaning of life?
       onLeft: 0
-    - name: Echo
+    - name: Nara
       background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
-      sentence: Don't tell yourself that this is the end. You must keep going even
-        if you fail. Don't let a little failure destroy you.
+      sentence: ...
       onLeft: 0
     - name: Nara
       background: {fileID: 6324472606935993198, guid: 370c9e3a48b48c744aff25b4aefe2580, type: 3}
