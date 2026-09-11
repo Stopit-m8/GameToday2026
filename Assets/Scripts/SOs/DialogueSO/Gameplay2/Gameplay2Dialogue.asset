@@ -15,85 +15,78 @@ MonoBehaviour:
   dialogue:
     dialogueLines:
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: What... happened to me?
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Where am I? Is this my final end?
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: "Maybe I already know why I\u2019m here."
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: I'm just a hollow shell... someone who hid behind a mask for so long,
         I forgot who I was.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
-      sentence: What was the point of pushing myself every single day?
+      background: {fileID: 0}
+      sentence: What was the point of pushing myself every single day... like that
+        beetle rolling its ball? It always tumbles back down, no matter how hard
+        I try.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
+      sentence: Or like that horse... forced to run endlessly, doing things it never
+        wanted to do.
+      onLeft: 0
+    - name: Nara
+      background: {fileID: 0}
       sentence: It all feels so meaningless. I can't even express how I truly feel
-        anymore.
+        anymore. Even the cookie gets crushed... just because it didn't fit the mold.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Echo
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Find them...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Wh-who's there? Who said that?!
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Its the same voice
       onLeft: 0
     - name: Echo
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Find them... before it all disappears.
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Wait! 'Find them'? What is that supposed to mean...?
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: ...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: I guess lying here won't change anything. Maybe I should explore
         this place...
       onLeft: 0
     - name: Nara
-      leftSprite: {fileID: 0}
-      rightSprite: {fileID: 0}
+      background: {fileID: 0}
       sentence: Maybe I can find them in every corner.
       onLeft: 0
+    changeScene: 0
+    sceneName: 
