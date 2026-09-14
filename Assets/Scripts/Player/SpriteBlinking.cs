@@ -36,7 +36,13 @@ public class SpriteBlinking : MonoBehaviour
 
     private void ApplyBlinkFactor()
     {
+        Debug.Log("PPP");
             _spriteRenderer.GetPropertyBlock(_materialPropertyBlock);
+        if( _materialPropertyBlock != null)
+        {
+            Debug.Log("TESPP");
+        }
             _materialPropertyBlock.SetFloat("_BlinkFactor", _blinkFactor);
+        _spriteRenderer.SetPropertyBlock(_materialPropertyBlock);
     }
 }
