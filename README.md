@@ -35,9 +35,17 @@ My Contribution (Stopit-m8):
 
 ---
 
-### 📁 Module and Features
+### ⚙️ Module and Features
 
-(jelasin layer module graph)
+| Module | Features | Description |
+|---|---|---|
+| **Player System** | Movement, Input | Handles player movement and input |
+| **Enemy System** | Movement | Handles enemy movement and behaviour |
+| **Minigame System** | Minigames | Handles minigame activation and minigame events |
+| **Dialogue System** | Dialogue | Handles dialogue triggers, dialogue text, and background change |
+| **Monologue System** | Monologue | Handles monologue triggers and monologue text |
+| **UI System** | Menus, HUD, Animation | Handles UI functionality and transitions |
+| **Audio System** | BGM, SFX | Manages music and sound effects |
 
 ---
 
