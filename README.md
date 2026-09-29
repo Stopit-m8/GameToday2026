@@ -29,9 +29,9 @@ My Contribution (Stopit-m8):
 
 ---
 
-### ⚙️ Layer / Module Design
+### ⚙️ Module Design
 
-(insert pic)
+![Project Diagram](Images/TanGoModuleDesign.drawio.svg)
 
 ---
 
@@ -51,4 +51,4 @@ My Contribution (Stopit-m8):
 
 ### 📁 Game Flow
 
-(insert gambar game flow)
+![Project Diagram](Images/TanGoModuleDesign.drawio.svg)
