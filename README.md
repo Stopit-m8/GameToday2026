@@ -31,7 +31,7 @@ My Contribution (Stopit-m8):
 
 ### ⚙️ Module Design
 
-![Project Diagram](Images/TanGoModuleDesign.drawio.svg)
+![Project Diagram](Images/KaroshiModuleDesign.drawio.svg)
 
 ---
 
@@ -51,4 +51,4 @@ My Contribution (Stopit-m8):
 
 ### 📁 Game Flow
 
-![Project Diagram](Images/TanGoModuleDesign.drawio.svg)
+![Project Diagram](Images/KaroshiGameFlow.drawio.svg)
